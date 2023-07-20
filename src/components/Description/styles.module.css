@@ -1,0 +1,38 @@
+.description {
+  background: #dedede;
+  padding: 2rem 0;
+}
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+.column1,
+.column2,
+.column3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.title {
+  font-size: 1.4rem;
+}
+@media (min-width: 700px) {
+  .description {
+    padding: 4rem 0rem;
+  }
+  .column1,
+  .column2 {
+    gap: 2rem;
+  }
+  .column3 {
+    gap: 2rem;
+    grid-column: span 2;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 6rem;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+}
