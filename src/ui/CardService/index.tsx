@@ -1,4 +1,4 @@
-import { Button, Grid, Paper } from '@mui/material';
+import { Box, Button, Grid, Paper, Typography } from '@mui/material';
 import styles from './styles.module.css';
 
 type CardServiceProps = {
@@ -11,17 +11,23 @@ const CardService = ({ title, subtitle }: CardServiceProps) => {
   return (
     <Grid item xs={12} sm={6} md={4} lg={3}>
       <Paper sx={{ p: 4 }}>
-        <div className={styles.card}>
-          <h4 className={styles.title}>{title}</h4>
-          <h3 className={styles.subtitle}>${subtitle} x mes</h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          libero exercitationem quasi temporibus rerum? Maiores aperiam
-          molestiae quam laboriosam. Quas aliquid assumenda itaque tenetur
-          mollitia distinctio adipisci quidem, expedita maiores?
-          <Button variant='contained' color='primary'>
+        <Box component='article' className={styles.card}>
+          <Typography fontWeight={600} className={styles.title}>
+            {title}
+          </Typography>
+          <Typography className={styles.subtitle} padding={0}>
+            ${subtitle} x mes
+          </Typography>
+          <Typography component='p' sx={{ mt: 2 }}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            libero exercitationem quasi temporibus rerum? Maiores aperiam
+            molestiae quam laboriosam. Quas aliquid assumenda itaque tenetur
+            mollitia distinctio adipisci quidem, expedita maiores?
+          </Typography>
+          <Button variant='contained' color='primary' sx={{ mt: 3 }}>
             Contratar
           </Button>
-        </div>
+        </Box>
       </Paper>
     </Grid>
   );

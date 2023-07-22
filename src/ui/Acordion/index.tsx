@@ -6,10 +6,11 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { frequentQuestions } from '@/data/frequentQuestions';
+import { Box } from '@mui/material';
 
 const Acordion = () => {
   return (
-    <div className={styles.container}>
+    <Box component='div' className={styles.container}>
       {frequentQuestions.map((data) => (
         <Accordion key={data.answer} className={styles.accordion}>
           <AccordionSummary
@@ -21,7 +22,7 @@ const Acordion = () => {
           <AccordionDetails>{data.answer}</AccordionDetails>
         </Accordion>
       ))}
-    </div>
+    </Box>
   );
 };
 

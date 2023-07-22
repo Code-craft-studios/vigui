@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material';
 import styles from './styles.module.css';
 
 type Props = {
@@ -5,7 +6,11 @@ type Props = {
 };
 
 const Title = ({ children }: Props) => {
-  return <h2 className={styles.title}>{children}</h2>;
+  return (
+    <Typography className={styles.title} fontWeight={600} textAlign={'center'}>
+      {children}
+    </Typography>
+  );
 };
 
 export default Title;

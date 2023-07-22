@@ -15,9 +15,8 @@
 }
 .logo {
   color: var(--c-secondary);
-}
-.logo h1 {
   font-size: clamp(1.6rem, 2vw, 3rem);
+  font-weight: bold;
 }
 .nav {
   justify-content: space-between;

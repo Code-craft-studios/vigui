@@ -1,16 +1,20 @@
-import { Box } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import Link from 'next/link';
 
 const Admin = () => {
   return (
-    <div>
+    <Box
+      component='section'
+      display={'flex'}
+      flexDirection={'column'}
+      p={2}
+      gap={2}
+    >
+      <Typography variant='body1'>Pagina en contruccion</Typography>
       <Link href={'/'}>
-        <Box display={'flex'} flexDirection={'column'} gap={2}>
-          Pagina en contruccion
-          <button>Volver al inicio</button>
-        </Box>
+        <Button variant='contained'>Volver al inicio</Button>
       </Link>
-    </div>
+    </Box>
   );
 };
 

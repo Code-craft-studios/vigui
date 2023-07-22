@@ -1,26 +1,26 @@
 import Image from 'next/image';
 import styles from './styles.module.css';
-import { Button } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import Title from '@/ui/Title';
 
 const Hero = () => {
   return (
-    <div className={styles.hero}>
-      <section className={styles.column1}>
-        <div>
+    <Box component='div' className={styles.hero} id='section-inicio'>
+      <Box component='section' className={styles.column1}>
+        <Box>
           <Title>Plan</Title>
-          <p>
+          <Typography component='p'>
             descripcion Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
             consectetur, adipisicing elit. Quas maiores facilis mollitia
             voluptatibus, inventore dolorum optio consectetur ipsa reiciendis
             deserunt?
-          </p>
+          </Typography>
           <Button variant='contained' color='secondary'>
             Contratar
           </Button>
-        </div>
-      </section>
-      <section className={styles.column2}>
+        </Box>
+      </Box>
+      <Box component='section' className={styles.column2}>
         <Image
           src='/manos.webp'
           alt='manos'
@@ -29,8 +29,8 @@ const Hero = () => {
           className={styles.img}
           priority={true}
         />
-      </section>
-    </div>
+      </Box>
+    </Box>
   );
 };
 export default Hero;

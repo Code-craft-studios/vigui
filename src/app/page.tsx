@@ -8,10 +8,11 @@ import RateUs from '@/components/RateUs';
 import Testimonials from '@/components/Testimonials';
 import FrecuentQuestions from '@/components/FrecuentQuestions';
 import Footer from '@/components/Footer';
+import { Box } from '@mui/material';
 
 const App = () => {
   return (
-    <div>
+    <>
       <Hero />
       <Description />
       <Benefits />
@@ -22,7 +23,7 @@ const App = () => {
       <FrecuentQuestions />
       <RateUs />
       <Footer />
-    </div>
+    </>
   );
 };
 

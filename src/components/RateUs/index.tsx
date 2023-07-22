@@ -68,8 +68,7 @@ const RateUs = () => {
           starValue={starValue}
           open={isOpenModal}
           setOpen={setIsOpenModal}
-        />{' '}
-        {/* formulario */}
+        />
       </Box>
     </Section>
   );
