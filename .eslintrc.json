@@ -1,4 +1,11 @@
 {
-  "extends": "next/core-web-vitals",
-  "ignorePatterns": ["node_modules/", ".next/", "out/"]
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:storybook/recommended"
+  ],
+  "ignorePatterns": [
+    "node_modules/",
+    ".next/",
+    "out/"
+  ]
 }
