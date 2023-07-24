@@ -13,7 +13,7 @@ const Description = () => {
       <Container>
         <Grid container spacing={{ xs: 2, md: 4, lg: 6 }}>
           <Grid item display={'flex'} flexDirection={'column'} gap={2} md={6}>
-            <Title>Historia</Title>
+            <Title text='Historia' />
             <Paper sx={{ p: 4 }}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
               consectetur, facere atque magnam obcaecati deleniti. Soluta aut
@@ -21,7 +21,7 @@ const Description = () => {
             </Paper>
           </Grid>
           <Grid item display={'flex'} flexDirection={'column'} gap={2} md={6}>
-            <Title>¿Que hacemos?</Title>
+            <Title text='¿Que hacemos?' />
             <Paper sx={{ p: 4 }}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
               consectetur, facere atque magnam obcaecati deleniti. Soluta aut
@@ -29,7 +29,7 @@ const Description = () => {
             </Paper>
           </Grid>
           <Grid item display={'flex'} flexDirection={'column'} gap={2}>
-            <Title>¿Que tecnologias usamos?</Title>
+            <Title text='¿Que tecnologias usamos?' />
             <Paper sx={{ p: 4 }}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
               consectetur, facere atque magnam obcaecati deleniti. Soluta aut

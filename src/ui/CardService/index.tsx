@@ -4,7 +4,6 @@ import styles from './styles.module.css';
 type CardServiceProps = {
   title: string;
   subtitle: string;
-  children?: React.ReactNode;
 };
 
 const CardService = ({ title, subtitle }: CardServiceProps) => {
