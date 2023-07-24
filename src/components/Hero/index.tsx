@@ -21,13 +21,10 @@ const Hero = () => {
         </div>
       </section>
       <section className={styles.column2}>
-        <Image
+        <img
           src='/manos.webp'
           alt='manos'
-          width={500}
-          height={500}
           className={styles.img}
-          priority={true}
         />
       </section>
     </div>
