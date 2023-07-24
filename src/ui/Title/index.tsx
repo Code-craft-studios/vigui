@@ -2,13 +2,13 @@ import { Typography } from '@mui/material';
 import styles from './styles.module.css';
 
 type Props = {
-  children: string;
+  text: string;
 };
 
-const Title = ({ children }: Props) => {
+const Title = ({ text }: Props) => {
   return (
     <Typography className={styles.title} fontWeight={600} textAlign={'center'}>
-      {children}
+      {text}
     </Typography>
   );
 };

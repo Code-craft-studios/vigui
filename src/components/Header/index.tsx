@@ -25,30 +25,32 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = [{
+const navItems = [
+  {
     name: 'Inicio',
-    url: '#section-inicio'
+    url: '#section-inicio',
   },
   {
     name: 'Conocenos',
-    url: '#section-conocenos'
+    url: '#section-conocenos',
   },
   {
     name: 'Planes y servicios',
-    url: '#section-planes'
+    url: '#section-planes',
   },
   {
     name: 'Consultas',
-    url: '#section-frecuentes'
+    url: '#section-frecuentes',
   },
   {
     name: 'Testimonios',
-    url: '#section-testimonios'
+    url: '#section-testimonios',
   },
   {
     name: 'Beneficios',
-    url: '#section-beneficios'
-  }];
+    url: '#section-beneficios',
+  },
+];
 
 const Header = (props: Props) => {
   const { window } = props;
@@ -64,7 +66,7 @@ const Header = (props: Props) => {
       <Divider />
       <List>
         {navItems.map((nav) => (
-          <a href={nav.url} className={styles.link}>
+          <a href={nav.url} className={styles.link} key={nav.url}>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary={nav.name} />
             </ListItemButton>
@@ -74,27 +76,26 @@ const Header = (props: Props) => {
     </Box>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex'}}>
+    <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{backgroundColor: 'var(--c-primary)'}}>
-        <Toolbar sx={{justifyContent: 'space-between'}}>
+      <AppBar component='nav' sx={{ backgroundColor: 'var(--c-primary)' }}>
+        <Toolbar sx={{ justifyContent: 'space-between' }}>
           <Logo />
           <Box sx={{ display: { xs: 'none', md: 'block' } }}>
             {navItems.map((nav) => (
-              <a href={nav.url} className={styles.link}>
-                <Button key={nav.url} sx={{ color: '#fff' }}>
-                  {nav.name}
-                </Button>
+              <a href={nav.url} className={styles.link} key={nav.url}>
+                <Button sx={{ color: '#fff' }}>{nav.name}</Button>
               </a>
             ))}
           </Box>
           <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
+            color='inherit'
+            aria-label='open drawer'
+            edge='start'
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { md: 'none' } }}
           >
@@ -102,11 +103,11 @@ const Header = (props: Props) => {
           </IconButton>
         </Toolbar>
       </AppBar>
-      <Box component="nav">
+      <Box component='nav'>
         <Drawer
           container={container}
-          variant="temporary"
-          anchor="right"
+          variant='temporary'
+          anchor='right'
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
@@ -114,7 +115,11 @@ const Header = (props: Props) => {
           }}
           sx={{
             display: { xs: 'block', md: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, backgroundColor: 'var(--c-primary)' },
+            '& .MuiDrawer-paper': {
+              boxSizing: 'border-box',
+              width: drawerWidth,
+              backgroundColor: 'var(--c-primary)',
+            },
           }}
         >
           {drawer}
@@ -122,6 +127,6 @@ const Header = (props: Props) => {
       </Box>
     </Box>
   );
-}
+};
 
 export default Header;

@@ -1,15 +1,20 @@
+import { PropsWithChildren } from 'react';
 import { Box, Container } from '@mui/material';
 import styles from './styles.module.css';
 import Title from '../Title';
 
 type SectionProps = {
-  children: React.ReactNode;
   title: string;
   bg?: string;
   id?: string;
 };
 
-const Section = ({ title, children, bg, id }: SectionProps) => {
+const Section = ({
+  title,
+  bg,
+  id,
+  children,
+}: PropsWithChildren<SectionProps>) => {
   return (
     <Box
       component='section'
@@ -18,7 +23,7 @@ const Section = ({ title, children, bg, id }: SectionProps) => {
       id={id}
     >
       <Container className={styles.container}>
-        <Title>{title}</Title>
+        <Title text={title} />
         {children}
       </Container>
     </Box>
