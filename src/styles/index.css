@@ -15,3 +15,7 @@ body > main {
   display: flex;
   flex-direction: column;
 }
+
+section[id] {
+  scroll-margin-top: 4rem;
+}
