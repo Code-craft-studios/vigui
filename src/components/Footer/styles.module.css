@@ -1,0 +1,9 @@
+.footer {
+  background: var(--c-primary);
+  color: white;
+}
+
+.logo {
+  color: var(--c-secondary);
+  font-size: clamp(1.6rem, 2vw, 3rem);
+}

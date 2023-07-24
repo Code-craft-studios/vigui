@@ -1,0 +1,18 @@
+.container {
+  margin: 0;
+}
+.accordion {
+  border: 1px solid rgb(230, 230, 230);
+  border-bottom: none;
+}
+.summary {
+  font-size: '0.9rem';
+  background: rgba(0, 0, 0, 0.03);
+  flex-direction: row-reverse;
+  gap: 1rem;
+}
+.details {
+  padding: 1rem 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  line-height: 1.6rem;
+}
