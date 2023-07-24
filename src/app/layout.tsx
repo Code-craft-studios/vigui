@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import '@/styles/index.css';
 import Header from '@/components/Header';
-import { ThemeProvider } from '@mui/material';
+import { Box, ThemeProvider } from '@mui/material';
 import { themeApp } from '@/theme/themeApp';
 
 type Props = {
@@ -16,12 +16,12 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: Props) => {
   return (
     <html lang='es'>
-      <body>
+      <Box component='body'>
         <ThemeProvider theme={themeApp}>
           <Header />
-          <main>{children}</main>
+          <Box component='main'>{children}</Box>
         </ThemeProvider>
-      </body>
+      </Box>
     </html>
   );
 };

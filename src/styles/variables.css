@@ -1,4 +1,3 @@
 :root {
-  --v-heightHeader: 70px;
-  --v-heightHero: calc(100vh - var(--v-heightHeader));
+  --v-heightHero: calc(100vh);
 }

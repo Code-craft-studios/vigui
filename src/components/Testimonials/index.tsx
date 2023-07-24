@@ -3,7 +3,7 @@ import Section from '@/ui/Section';
 
 const Testimonials = () => {
   return (
-    <Section title='Testimonios'>
+    <Section title='Testimonios' id='section-testimonios'>
       <CardTestimonial />
     </Section>
   );

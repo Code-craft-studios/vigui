@@ -1,3 +1,4 @@
+import { Box } from '@mui/material';
 import type { Metadata } from 'next';
 
 type Props = {
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const AdminLayout = ({ children }: Props) => {
-  return <div>{children}</div>;
+  return <Box component='main'>{children}</Box>;
 };
 
 export default AdminLayout;

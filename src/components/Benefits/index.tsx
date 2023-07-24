@@ -3,7 +3,7 @@ import Section from '@/ui/Section';
 
 const Benefits = () => {
   return (
-    <Section title='Beneficios'>
+    <Section title='Beneficios' id='section-beneficios'>
       <Card>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
         consectetur, facere atque magnam obcaecati deleniti. Soluta aut vitae

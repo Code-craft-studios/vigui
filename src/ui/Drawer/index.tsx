@@ -71,7 +71,7 @@ export default function TemporaryDrawer() {
   );
 
   return (
-    <div>
+    <Box component='div'>
       {(['left', 'right', 'top', 'bottom'] as const).map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
@@ -84,6 +84,6 @@ export default function TemporaryDrawer() {
           </Drawer>
         </React.Fragment>
       ))}
-    </div>
+    </Box>
   );
 }

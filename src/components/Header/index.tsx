@@ -8,13 +8,13 @@ import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Logo from '@/ui/Logo';
+import styles from './styles.module.css';
 
 interface Props {
   /**
@@ -25,7 +25,30 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ['Inicio', 'Conocenos', 'Planes y servicios', 'Consultas', 'Testimonios', 'Contacto'];
+const navItems = [{
+    name: 'Inicio',
+    url: '#section-inicio'
+  },
+  {
+    name: 'Conocenos',
+    url: '#section-conocenos'
+  },
+  {
+    name: 'Planes y servicios',
+    url: '#section-planes'
+  },
+  {
+    name: 'Consultas',
+    url: '#section-frecuentes'
+  },
+  {
+    name: 'Testimonios',
+    url: '#section-testimonios'
+  },
+  {
+    name: 'Beneficios',
+    url: '#section-beneficios'
+  }];
 
 const Header = (props: Props) => {
   const { window } = props;
@@ -40,12 +63,12 @@ const Header = (props: Props) => {
       <Logo />
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding sx={{color: '#FFF'}}>
+        {navItems.map((nav) => (
+          <a href={nav.url} className={styles.link}>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+              <ListItemText primary={nav.name} />
             </ListItemButton>
-          </ListItem>
+          </a>
         ))}
       </List>
     </Box>
@@ -56,14 +79,16 @@ const Header = (props: Props) => {
   return (
     <Box sx={{ display: 'flex'}}>
       <CssBaseline />
-      <AppBar component="nav">
+      <AppBar component="nav" sx={{backgroundColor: 'var(--c-primary)'}}>
         <Toolbar sx={{justifyContent: 'space-between'}}>
           <Logo />
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
-              </Button>
+          <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+            {navItems.map((nav) => (
+              <a href={nav.url} className={styles.link}>
+                <Button key={nav.url} sx={{ color: '#fff' }}>
+                  {nav.name}
+                </Button>
+              </a>
             ))}
           </Box>
           <IconButton
@@ -71,7 +96,7 @@ const Header = (props: Props) => {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { md: 'none' } }}
           >
             <MenuIcon />
           </IconButton>
@@ -81,13 +106,14 @@ const Header = (props: Props) => {
         <Drawer
           container={container}
           variant="temporary"
+          anchor="right"
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { xs: 'block', md: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, backgroundColor: 'var(--c-primary)' },
           }}
         >

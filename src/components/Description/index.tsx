@@ -1,28 +1,34 @@
-import { Container, Paper } from '@mui/material';
-import styles from './styles.module.css';
+import { Box, Container, Grid, Paper } from '@mui/material';
 import Title from '@/ui/Title';
 
 const Description = () => {
   return (
-    <section className={styles.description}>
+    <Box
+      component='section'
+      id='section-conocenos'
+      py={{ xs: 2, sm: 6, md: 8 }}
+      px={{ xs: 0 }}
+      bgcolor={'#dedede'}
+    >
       <Container>
-        <div className={styles.grid}>
-          <div className={styles.column1}>
+        <Grid container spacing={{ xs: 2, md: 4, lg: 6 }}>
+          <Grid item display={'flex'} flexDirection={'column'} gap={2} md={6}>
             <Title>Historia</Title>
-            <p>
-              Descripcion Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Animi, enim?
-            </p>
-          </div>
-          <div className={styles.column2}>
+            <Paper sx={{ p: 4 }}>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
+              consectetur, facere atque magnam obcaecati deleniti. Soluta aut
+              vitae nemo expedita.
+            </Paper>
+          </Grid>
+          <Grid item display={'flex'} flexDirection={'column'} gap={2} md={6}>
             <Title>¿Que hacemos?</Title>
             <Paper sx={{ p: 4 }}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
               consectetur, facere atque magnam obcaecati deleniti. Soluta aut
               vitae nemo expedita.
             </Paper>
-          </div>
-          <div className={styles.column3}>
+          </Grid>
+          <Grid item display={'flex'} flexDirection={'column'} gap={2}>
             <Title>¿Que tecnologias usamos?</Title>
             <Paper sx={{ p: 4 }}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
@@ -35,10 +41,10 @@ const Description = () => {
               dignissimos, dicta harum quo aliquam necessitatibus in, hic vel
               dolore sapiente quia mollitia!
             </Paper>
-          </div>
-        </div>
+          </Grid>
+        </Grid>
       </Container>
-    </section>
+    </Box>
   );
 };
 export default Description;

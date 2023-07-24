@@ -3,8 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--f-primary);
+  scroll-behavior: smooth;
 }
-
+section[id] {
+  scroll-margin-top: 4rem;
+}
 a {
   text-decoration: none;
   color: var(--c-primary);

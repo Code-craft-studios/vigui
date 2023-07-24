@@ -4,7 +4,7 @@ import { Button } from '@mui/material';
 
 const FrecuentQuestions = () => {
   return (
-    <Section title='Dudas frecuentes' bg='#dedede'>
+    <Section title='Dudas frecuentes' bg='#dedede' id='section-frecuentes'>
       <Acordion />
       <Button
         variant='contained'
