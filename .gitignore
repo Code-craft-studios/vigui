@@ -35,5 +35,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+
+# vitest
+/coverage
+
 #typed css modules
 *.css.d.ts
+
