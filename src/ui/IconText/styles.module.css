@@ -4,8 +4,11 @@
   justify-content: flex-start;
   align-items: center;
 }
-img {
-  margin-bottom: .5rem;
+.container img {
+  margin-bottom: 1.5rem;
+  max-height: 6rem;
+  height: 100%;
+  width: 100%;
 }
 .container p {
   max-width: 25ch;
