@@ -1,12 +1,70 @@
 .card {
+  height: 20rem;
+  width: 12rem;
+}
+.card:hover .header {
+  transform: translate(10%, 10%);
+  transition: transform 250ms;
+}
+.card:hover .price {
+  transition: color 250ms;
+  color: #0e5beb;
+}
+.card:hover .body {
+  background-color: #0e5beb;
+  transition: background 250ms;
+}
+.card:hover .list {
+  transform: translateY(.5em);
+  transition: transform 250ms;
+}
+.header {
+  position: relative;
+  width: 83%;
+  inset-block-start: 0%;
+  z-index: 2;
+  height: 35%;
+  inset-inline-start:-14%;
+  background-color: #FFF;
+  border-radius: 0.25rem;
+  box-shadow: 0em 0em 0.5em 0.1em #0000001a;
+  padding: 1rem;
+  transition: transform 250ms;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
-
-.title {
-  font-size: clamp(1.4rem, 3vw, 2.2rem);
+.body {
+  inset-block-start: -25%;
+  height: 86%;
+  background-color: #00b3ff;
+  border-radius: 0.25rem;
+  position: relative;
+  z-index: 1;
+  transition: all 250ms;
+  color: #FFF;
+  font-weight: lighter;
+  transition: background 250ms;
 }
-
-.subtitle {
-  font-size: clamp(1.2rem, 3vw, 1.6rem);
+.textBody {
+  position: relative;
+  top: calc(30% + 1em);
+  transition: all 250ms;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list {
+  padding: 1rem;
+  transition: transform 250ms;
+}
+.price {
+  color: #00b3ff;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  transition: color 250ms;
+}
+.button {
+  width: 80%;
 }
