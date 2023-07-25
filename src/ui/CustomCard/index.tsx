@@ -1,25 +1,23 @@
 'use client';
 
-import React, { ReactNode, useState } from 'react';
+import React, { ReactNode } from 'react';
 import styles from './styles.module.css';
 
 type CustomCardProps = {
   headerContent: ReactNode;
   bodyContent: ReactNode;
   className?: string;
-  color: string;
-  onMouseEnter: React.MouseEventHandler<HTMLDivElement> | undefined;
-  onMouseLeave: React.MouseEventHandler<HTMLDivElement> | undefined;
 };
 
-const CustomCard = ({ headerContent, bodyContent, className, color, onMouseEnter, onMouseLeave }: CustomCardProps) => {
+const CustomCard = ({ headerContent, bodyContent, className }: CustomCardProps) => {
 
   return (
-    <div className={`${styles.card} ${className}`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+    <div className={`${styles.card} ${className}`}>
       <div className={styles.header}>
         { headerContent }
       </div>
-      <div className={styles.body} style={{ backgroundColor: color}}>
+      <div className={styles.body}>
+        <div className={styles.hoverBg}></div>
         { bodyContent }
       </div>
     </div>

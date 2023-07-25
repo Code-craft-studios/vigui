@@ -20,7 +20,6 @@ export const Default: Story = {
     price: '$44.000',
     title: '6Mb - 30Mb',
     items: ['Navega', 'Descarga', 'Transmite', 'Juega en vivo'],
-    color: '#00B3FF',
-    hoverColor: '#0E58EA',
+    variant: "primary" || "secondary",
   },
 };

@@ -7,10 +7,6 @@
   transform: translate(10%, 10%);
   transition: transform 250ms;
 }
-.card:hover .body {
-  background-color: attr(data-hover);
-  transition: background 250ms;
-}
 .header {
   position: relative;
   width: 83%;
@@ -33,9 +29,11 @@
   border-radius: 0.25rem;
   position: relative;
   z-index: 1;
-  transition: all 250ms;
+  transition: background 250ms;
   color: #FFF;
   font-weight: lighter;
-  transition: background 250ms;
-  background-color: #FAFAFA;
+  background-color: var(--color-1);
+}
+.body:hover {
+  background-color: var(--color-2);
 }
