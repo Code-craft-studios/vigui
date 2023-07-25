@@ -1,13 +1,15 @@
-import styles from './styles.module.css';
+'use client';
 
-type AnimatedButtonProps = {
-  title: string;
-  className?: string;
+import styles from './styles.module.css';
+import {HTMLProps} from 'react'
+
+interface AnimatedButtonProps extends HTMLProps<HTMLButtonElement> {
+  className?: string
 };
 
-const AnimatedButton = ({ title, className }: AnimatedButtonProps) => {
+const AnimatedButton = ({ className, children, ...buttonProps }: AnimatedButtonProps) => {
   return (
-    <button className={`${styles.button} ${className}`}>{ title }</button>
+    <button {...buttonProps} type='button' className={`${styles.button} ${className}`}>{ children }</button>
   );
 };
 export default AnimatedButton;

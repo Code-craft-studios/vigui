@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import CardService from '../ui/CardService';
+import CardService from '../components/CardService';
+
 
 const meta = {
   title: 'Example/CardService',

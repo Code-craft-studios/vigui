@@ -1,30 +1,32 @@
-import AnimatedButton from '../AnimatedButton';
+import CustomCard from '../../ui/CustomCard';
 import styles from './styles.module.css';
+import AnimatedButton from '../../ui/AnimatedButton';
 
 type CardServiceProps = {
   price: string;
   title: string;
   items: string[];
-};
+}
 
-const CardService = ({ price, title, items }: CardServiceProps) => {
+const CardService = ({price, title, items}: CardServiceProps) => {
   return (
-    <div className={styles.card}>
-      <div className={styles.header}>
+    <CustomCard className={styles.card} headerContent={
+      <>
         <p className={styles.price}>{ price }</p>
         <p className={styles.title}>{ title }</p>
-      </div>
-      <div className={styles.body}>
-        <div className={styles.textBody}>
+      </>
+    }
+    bodyContent={
+      <div className={styles.textBody}>
           <ul className={styles.list}>
             { items.map((item, index) =>
               <li key={index+item}>{ item }</li>
             )}
           </ul>
-          <AnimatedButton title='Comprar' className={styles.button}/>
+          <AnimatedButton className={styles.button}>Comprar</AnimatedButton>
         </div>
-      </div>
-    </div>
+    } />
   );
 };
+
 export default CardService;

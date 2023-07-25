@@ -1,22 +1,15 @@
 .card {
-  height: 20rem;
-  width: 12rem;
+  height: 25rem;
+  width: 15rem;
+  transform: translateX(14%);
 }
 .card:hover .header {
   transform: translate(10%, 10%);
   transition: transform 250ms;
 }
-.card:hover .price {
-  transition: color 250ms;
-  color: #0e5beb;
-}
 .card:hover .body {
   background-color: #0e5beb;
   transition: background 250ms;
-}
-.card:hover .list {
-  transform: translateY(.5em);
-  transition: transform 250ms;
 }
 .header {
   position: relative;
@@ -45,26 +38,4 @@
   color: #FFF;
   font-weight: lighter;
   transition: background 250ms;
-}
-.textBody {
-  position: relative;
-  top: calc(30% + 1em);
-  transition: all 250ms;
-  height: 65%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.list {
-  padding: 1rem;
-  transition: transform 250ms;
-}
-.price {
-  color: #00b3ff;
-  font-size: 1.5rem;
-  margin-bottom: .5rem;
-  transition: color 250ms;
-}
-.button {
-  width: 80%;
 }

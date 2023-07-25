@@ -1,6 +1,6 @@
 .button {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   background-color: transparent;
   border: none;
   color: #FFF;
@@ -20,8 +20,9 @@
   transform: translateX(100%);
   opacity: 0;
   width: 100%;
-  height: calc(100% - 0.4rem);
+  height: 100%;
   border: .2rem solid #FFF;
+  border-right-width: 0;
   transition: transform 250ms, opacity 250ms;
 }
 
