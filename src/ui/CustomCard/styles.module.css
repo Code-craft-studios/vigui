@@ -34,6 +34,6 @@
   font-weight: lighter;
   background-color: var(--color-1);
 }
-.body:hover {
+.card:hover .body {
   background-color: var(--color-2);
 }
