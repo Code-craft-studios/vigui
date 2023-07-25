@@ -1,0 +1,36 @@
+.colorPrimary {
+  --color-1: #0786F5;
+  --color-2: #0C64ED;
+}
+.colorSecondary {
+  --color-1: #FFC85F;
+  --color-2: #FF4C00;
+}
+.price {
+  transition: color 250ms;
+  color: var(--color-1);
+}
+.card:hover .price {
+  transition: color 250ms;
+  color: var(--color-2);
+}
+.card:hover .list {
+  transform: translateY(.5em);
+  transition: transform 250ms;
+}
+.textBody {
+  position: relative;
+  top: calc(30% + 1em);
+  transition: all 250ms;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list {
+  padding: 1rem;
+  transition: transform 250ms;
+}
+.button {
+  width: 60%;
+}
