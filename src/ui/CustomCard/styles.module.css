@@ -8,7 +8,7 @@
   transition: transform 250ms;
 }
 .card:hover .body {
-  background-color: #0e5beb;
+  background-color: attr(data-hover);
   transition: background 250ms;
 }
 .header {
@@ -30,7 +30,6 @@
 .body {
   inset-block-start: -25%;
   height: 86%;
-  background-color: #00b3ff;
   border-radius: 0.25rem;
   position: relative;
   z-index: 1;
@@ -38,4 +37,5 @@
   color: #FFF;
   font-weight: lighter;
   transition: background 250ms;
+  background-color: #FAFAFA;
 }
