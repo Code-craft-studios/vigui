@@ -1,15 +1,15 @@
-import IconText from '@/ui/IconText';
+import BenefitsIconText from '@/components/BenefitsIconText';
 import type { Meta, StoryObj } from '@storybook/react';
 
 
 const meta = {
-  title: 'Example/IconText',
-  component: IconText,
+  title: 'Example/BenefitsIconText',
+  component: BenefitsIconText,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof IconText>;
+} satisfies Meta<typeof BenefitsIconText>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
