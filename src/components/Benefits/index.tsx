@@ -15,12 +15,12 @@ type BenefitsProp = {
 const paddings = {
   padding: {
     xs: '1rem',
-    md: '1rem 0'
+    md: '2rem 0'
   }
 }
 const defaultBenefits = [{
     src: '/icon_1.svg',
-    alt: 'Router',
+    alt: 'Descarga',
     title: 'Descarga de manera ininterrumpida'
   },
   {
@@ -29,15 +29,20 @@ const defaultBenefits = [{
     title: 'Servicio de megas dedicado'
   },
   {
-    src: '/icon_2.svg',
+    src: '/icon_3.svg',
     alt: 'Dispositivos',
     title: 'Soporta varios dispositivos conectados'
   },
   {
-    src: '/icon_2.svg',
+    src: '/icon_4.svg',
+    alt: 'Velocidad',
+    title: 'Rendimiento de alta velocidad'
+  },
+  {
+    src: '/icon_3.svg',
     alt: 'Conexion',
     title: 'Múltiples métodos de conexión'
-  }]
+  },]
 
 const Benefits = ({ customBenefits =  defaultBenefits }: BenefitsProp) => {
 
@@ -46,7 +51,7 @@ const Benefits = ({ customBenefits =  defaultBenefits }: BenefitsProp) => {
       <Grid container spacing={2} pt={5}>
         
         {customBenefits.map((benefit, index) => (
-          <Grid py={3} xs={6} md={3} sx={paddings} key={index+benefit.alt}>
+          <Grid py={3} xs={6} md={12/5} sx={paddings} key={index+benefit.alt}>
             <BenefitsIconText src={benefit.src} alt={benefit.alt}>
               <Typography>{benefit.title}</Typography>
             </BenefitsIconText>
