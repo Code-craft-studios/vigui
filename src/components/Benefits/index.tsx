@@ -1,19 +1,58 @@
-import Card from '@/ui/Card';
 import Section from '@/ui/Section';
+import { Grid, Typography } from '@mui/material';
+import BenefitsIconText from '../BenefitsIconText';
 
-const Benefits = () => {
+type BenefitProps = {
+  alt: string;
+  src: string;
+  title: string;
+}
+
+type BenefitsProp = {
+  customBenefits?: Array<BenefitProps>
+}
+
+const paddings = {
+  padding: {
+    xs: '1rem',
+    md: '1rem 0'
+  }
+}
+const defaultBenefits = [{
+    src: '/icon_1.svg',
+    alt: 'Router',
+    title: 'Descarga de manera ininterrumpida'
+  },
+  {
+    src: '/icon_2.svg',
+    alt: 'Megas',
+    title: 'Servicio de megas dedicado'
+  },
+  {
+    src: '/icon_2.svg',
+    alt: 'Dispositivos',
+    title: 'Soporta varios dispositivos conectados'
+  },
+  {
+    src: '/icon_2.svg',
+    alt: 'Conexion',
+    title: 'Múltiples métodos de conexión'
+  }]
+
+const Benefits = ({ customBenefits =  defaultBenefits }: BenefitsProp) => {
+
   return (
     <Section title='Beneficios' id='section-beneficios'>
-      <Card>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-        consectetur, facere atque magnam obcaecati deleniti. Soluta aut vitae
-        nemo expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Delectus dolores maiores quibusdam tenetur ducimus quas, repellendus hic
-        quod officia nobis laborum accusantium deleniti doloribus ex debitis
-        optio excepturi minima unde earum iste. Consequuntur fugiat laboriosam
-        a, laborum dignissimos, dicta harum quo aliquam necessitatibus in, hic
-        vel dolore sapiente quia mollitia!
-      </Card>
+      <Grid container spacing={2} pt={5}>
+        
+        {customBenefits.map((benefit, index) => (
+          <Grid py={3} xs={6} md={3} sx={paddings} key={index+benefit.alt}>
+            <BenefitsIconText src={benefit.src} alt={benefit.alt}>
+              <Typography>{benefit.title}</Typography>
+            </BenefitsIconText>
+          </Grid>
+        ))}
+      </Grid>
     </Section>
   );
 };
