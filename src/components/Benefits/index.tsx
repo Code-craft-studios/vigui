@@ -39,15 +39,13 @@ const defaultBenefits = [{
     title: 'Múltiples métodos de conexión'
   }]
 
-const Benefits = ({ customBenefits }: BenefitsProp) => {
-
-  const benefitsToUse = customBenefits ?? defaultBenefits;
+const Benefits = ({ customBenefits =  defaultBenefits }: BenefitsProp) => {
 
   return (
     <Section title='Beneficios' id='section-beneficios'>
       <Grid container spacing={2} pt={5}>
         
-        {benefitsToUse.map((benefit, index) => (
+        {customBenefits.map((benefit, index) => (
           <Grid py={3} xs={6} md={3} sx={paddings} key={index+benefit.alt}>
             <BenefitsIconText src={benefit.src} alt={benefit.alt}>
               <Typography>{benefit.title}</Typography>
