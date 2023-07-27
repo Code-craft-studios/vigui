@@ -48,7 +48,7 @@ const Benefits = ({ customBenefits =  defaultBenefits }: BenefitsProp) => {
 
   return (
     <Section title='Beneficios' id='section-beneficios'>
-      <Grid container spacing={2} pt={5}>
+      <Grid container spacing={2} pt={5} justifyContent='center'>
         
         {customBenefits.map((benefit, index) => (
           <Grid py={3} xs={6} md={12/5} sx={paddings} key={index+benefit.alt}>
