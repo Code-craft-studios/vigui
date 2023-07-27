@@ -6,11 +6,10 @@
 }
 .container img {
   margin-bottom: 1.5rem;
-  max-height: 6rem;
-  height: 100%;
-  width: 100%;
+  inline-size: 100%;
+  max-block-size: 6rem;
 }
 .container p {
-  max-width: 25ch;
+  max-inline-size: 25ch;
   text-align: center;
 }
