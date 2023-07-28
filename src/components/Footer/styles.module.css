@@ -1,9 +1,9 @@
 .footer {
-  background: var(--c-primary);
+  background: var(--primary-400);
   color: white;
 }
 
 .logo {
-  color: var(--c-secondary);
+  color: white;
   font-size: clamp(1.6rem, 2vw, 3rem);
 }
