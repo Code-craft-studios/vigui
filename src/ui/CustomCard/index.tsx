@@ -17,7 +17,6 @@ const CustomCard = ({ headerContent, bodyContent, className }: CustomCardProps) 
         { headerContent }
       </div>
       <div className={styles.body}>
-        <div className={styles.hoverBg}></div>
         { bodyContent }
       </div>
     </div>
