@@ -18,7 +18,7 @@ const CardService = ({price, title, items, variant}: CardServiceProps) => {
     <CustomCard className={`${styles.card} ${variants[variant]}`} headerContent={
       <>
         <Typography className={styles.price}>{ price }</Typography>
-        <Typography className={styles.title}>{ title }</Typography>
+        <Typography>{ title }</Typography>
       </>
     }
     bodyContent={

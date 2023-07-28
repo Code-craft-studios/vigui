@@ -19,27 +19,27 @@ const paddings = {
   }
 }
 const defaultBenefits = [{
-    src: '/icon_1.svg',
+    src: '/icons/benefits/descarga.svg',
     alt: 'Descarga',
     title: 'Descarga de manera ininterrumpida'
   },
   {
-    src: '/icon_2.svg',
+    src: '/icons/benefits/megas.svg',
     alt: 'Megas',
     title: 'Servicio de megas dedicado'
   },
   {
-    src: '/icon_3.svg',
+    src: '/icons/benefits/dispositivos.svg',
     alt: 'Dispositivos',
     title: 'Soporta varios dispositivos conectados'
   },
   {
-    src: '/icon_4.svg',
+    src: '/icons/benefits/velocidad.svg',
     alt: 'Velocidad',
     title: 'Rendimiento de alta velocidad'
   },
   {
-    src: '/icon_3.svg',
+    src: '/icons/benefits/conexion.svg',
     alt: 'Conexion',
     title: 'Múltiples métodos de conexión'
   },]

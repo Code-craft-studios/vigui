@@ -20,6 +20,6 @@ export const Default: Story = {
     price: '$44.000',
     title: '6Mb - 30Mb',
     items: ['Navega', 'Descarga', 'Transmite', 'Juega en vivo'],
-    variant: "primary" || "secondary",
+    variant: 'primary',
   },
 };
