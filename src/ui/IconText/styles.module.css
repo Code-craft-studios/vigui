@@ -10,6 +10,6 @@
   max-block-size: 6rem;
 }
 .container p {
-  max-inline-size: 25ch;
+  max-inline-size: 20ch;
   text-align: center;
 }

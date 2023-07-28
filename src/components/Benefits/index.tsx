@@ -15,38 +15,43 @@ type BenefitsProp = {
 const paddings = {
   padding: {
     xs: '1rem',
-    md: '1rem 0'
+    md: '2rem 0'
   }
 }
 const defaultBenefits = [{
-    src: '/icon_1.svg',
-    alt: 'Router',
+    src: '/icons/benefits/descarga.svg',
+    alt: 'Descarga',
     title: 'Descarga de manera ininterrumpida'
   },
   {
-    src: '/icon_2.svg',
+    src: '/icons/benefits/megas.svg',
     alt: 'Megas',
     title: 'Servicio de megas dedicado'
   },
   {
-    src: '/icon_2.svg',
+    src: '/icons/benefits/dispositivos.svg',
     alt: 'Dispositivos',
     title: 'Soporta varios dispositivos conectados'
   },
   {
-    src: '/icon_2.svg',
+    src: '/icons/benefits/velocidad.svg',
+    alt: 'Velocidad',
+    title: 'Rendimiento de alta velocidad'
+  },
+  {
+    src: '/icons/benefits/conexion.svg',
     alt: 'Conexion',
     title: 'Múltiples métodos de conexión'
-  }]
+  },]
 
 const Benefits = ({ customBenefits =  defaultBenefits }: BenefitsProp) => {
 
   return (
     <Section title='Beneficios' id='section-beneficios'>
-      <Grid container spacing={2} pt={5}>
+      <Grid container spacing={2} pt={5} justifyContent='center'>
         
         {customBenefits.map((benefit, index) => (
-          <Grid py={3} xs={6} md={3} sx={paddings} key={index+benefit.alt}>
+          <Grid py={3} xs={6} md={12/5} sx={paddings} key={index+benefit.alt}>
             <BenefitsIconText src={benefit.src} alt={benefit.alt}>
               <Typography>{benefit.title}</Typography>
             </BenefitsIconText>
