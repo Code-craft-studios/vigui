@@ -1,5 +1,5 @@
 import Section from '@/ui/Section';
-import { Grid, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 import BenefitsIconText from '../BenefitsIconText';
 
 type BenefitProps = {
@@ -52,9 +52,7 @@ const Benefits = ({ customBenefits =  defaultBenefits }: BenefitsProp) => {
         
         {customBenefits.map((benefit, index) => (
           <Grid py={3} xs={6} md={12/5} sx={paddings} key={index+benefit.alt}>
-            <BenefitsIconText src={benefit.src} alt={benefit.alt}>
-              <Typography>{benefit.title}</Typography>
-            </BenefitsIconText>
+            <BenefitsIconText src={benefit.src} alt={benefit.alt}>{benefit.title}</BenefitsIconText>
           </Grid>
         ))}
       </Grid>
