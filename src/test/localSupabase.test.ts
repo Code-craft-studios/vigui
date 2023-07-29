@@ -10,8 +10,8 @@ const fetchMocker = createFetchMock(vi);
 fetchMocker.enableMocks();
 
 const SUPABASE_URL = 'https://pablito.com'
-const SUPBASE_KEY = 'frr43fr2rfvfv24rf24rgg324rf42'
-const supabaseClient = createClient(SUPABASE_URL, SUPBASE_KEY)
+const SUPABASE_KEY = 'frr43fr2rfvfv24rf24rgg324rf42'
+const supabaseClient = createClient(SUPABASE_URL, SUPABASE_KEY)
 const supabaseLocalClient = new LocalSupabase(supabaseClient);
 
 afterEach(()=>{
@@ -33,7 +33,7 @@ describe('supabase service', ()=>{
     const [request] = fetchMock.requests()
 
     expect(request.url).toContain(SUPABASE_URL)
-    expect(request.headers.get('apiKey')).toBe(SUPBASE_KEY)
+    expect(request.headers.get('apiKey')).toBe(SUPABASE_KEY)
     expect(responseSupa).toStrictEqual(response);
   })
 })
