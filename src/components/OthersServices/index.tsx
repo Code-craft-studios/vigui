@@ -1,6 +1,8 @@
-import Section from '@/ui/Section';
-import { Grid } from '@mui/material';
+import { Box, Container, Grid } from '@mui/material';
 import OthersIconText from '../OthersIconText';
+import Title from '@/ui/Title';
+import styles from './styles.module.css';
+
 type ServiceProps = {
   alt: string;
   src: string;
@@ -39,16 +41,24 @@ const defaultServices = [{
 
 const OthersServices =  ({ customServices =  defaultServices }: ServicesProp) => {
   return (
-    <Section title='Otros servicios'>
-      <Grid container spacing={2} py={5} justifyContent='center'>
-        
-        {customServices.map((service, index) => (
-          <Grid py={3} xs={6} md={12/5} sx={paddings} key={index+service.alt}>
-            <OthersIconText src={service.src} alt={service.alt} title={service.title} subtitle={service.subtitle} />
-          </Grid>
-        ))}
-      </Grid>
-    </Section>
+
+    <section
+      className={styles.section}
+    >
+      <Container className={styles.container}>
+        <Title text={'Otros servicios'} />
+        <Grid container spacing={2} py={5} justifyContent='center'>
+          
+          {customServices.map((service, index) => (
+            <Grid py={3} xs={6} md={12/5} item sx={paddings} key={index+service.alt}>
+              <OthersIconText src={service.src} alt={service.alt} title={service.title} subtitle={service.subtitle} />
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+      <img src="/images/bg-gradient-left.svg" className={`${styles.bgContainer} ${styles.left}`} />
+      <img src="/images/bg-gradient-right.svg" className={`${styles.bgContainer} ${styles.right}`} />
+    </section>
   );
 };
 export default OthersServices;

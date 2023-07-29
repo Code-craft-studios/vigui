@@ -1,0 +1,29 @@
+.section {
+  padding: 2rem 0;
+  position: relative;
+}
+.container {
+  display: flex !important;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bgContainer {
+  position: absolute;
+  inset-block-end: 0;
+}
+.left {
+  inset-inline-start: 0;
+}
+.right {
+  inset-inline-end: 0;
+}
+
+@media (min-width: 700px) {
+  .section {
+    padding: 4rem 0;
+  }
+  .container {
+    gap: 2rem;
+  }
+}
