@@ -1,6 +1,6 @@
-import createFetchMock, { FetchMock } from 'vitest-fetch-mock';
+import createFetchMock from 'vitest-fetch-mock';
 
-import { describe, test, expect, vi } from 'vitest'
+import { describe, test, expect, vi, afterEach } from 'vitest'
 
 import { LocalSupabase } from '@/lib/services/supabase'
 import { createClient } from '@supabase/supabase-js'
@@ -14,6 +14,9 @@ const SUPBASE_KEY = 'frr43fr2rfvfv24rf24rgg324rf42'
 const supabaseClient = createClient(SUPABASE_URL, SUPBASE_KEY)
 const supabaseLocalClient = new LocalSupabase(supabaseClient);
 
+afterEach(()=>{
+  fetchMocker.mockClear()
+})
 
 describe('supabase service', ()=>{
   test('test petition', async ()=>{
@@ -22,7 +25,7 @@ describe('supabase service', ()=>{
       title: 'adasdsad'
     }];
 
-    const fetchMock = (fetch as FetchMock)
+    fetchMocker
       .mockResponse(JSON.stringify(response))
 
     const responseSupa = await supabaseLocalClient.fetchTestData();
