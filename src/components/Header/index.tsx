@@ -82,7 +82,7 @@ const Header = (props: Props) => {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component='nav' sx={{ backgroundColor: 'var(--c-primary)' }}>
+      <AppBar component='nav' sx={{ backgroundColor: 'var(--primary-300)' }}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           <Logo />
           <Box sx={{ display: { xs: 'none', md: 'block' } }}>
@@ -118,7 +118,7 @@ const Header = (props: Props) => {
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: drawerWidth,
-              backgroundColor: 'var(--c-primary)',
+              backgroundColor: 'var(--primary-300)',
             },
           }}
         >
