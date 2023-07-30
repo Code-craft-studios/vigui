@@ -1,13 +1,17 @@
 import { Typography } from '@mui/material';
-import styles from './styles.module.css';
+import { titleClasses } from './classes';
+
+type Variants = "primary" | "secondary";
 
 type Props = {
   text: string;
+  variant?: Variants;
 };
 
-const Title = ({ text }: Props) => {
+
+const Title = ({ text, variant }: Props) => {
   return (
-    <Typography className={styles.title} fontWeight={600} textAlign={'center'}>
+    <Typography className={titleClasses({intent:variant})} fontWeight={700} textAlign={'center'}>
       {text}
     </Typography>
   );

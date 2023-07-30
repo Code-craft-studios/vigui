@@ -1,6 +1,7 @@
-import Section from '@/ui/Section';
 import { Grid } from '@mui/material';
 import OthersIconText from '../OthersIconText';
+import SectionGradient from '@/ui/SectionGradient';
+
 type ServiceProps = {
   alt: string;
   src: string;
@@ -39,16 +40,15 @@ const defaultServices = [{
 
 const OthersServices =  ({ customServices =  defaultServices }: ServicesProp) => {
   return (
-    <Section title='Otros servicios'>
+    <SectionGradient title={'Otros servicios'}>
       <Grid container spacing={2} py={5} justifyContent='center'>
-        
         {customServices.map((service, index) => (
-          <Grid py={3} xs={6} md={12/5} sx={paddings} key={index+service.alt}>
+          <Grid py={3} xs={6} md={12/5} item sx={paddings} key={service.alt}>
             <OthersIconText src={service.src} alt={service.alt} title={service.title} subtitle={service.subtitle} />
           </Grid>
         ))}
       </Grid>
-    </Section>
+    </SectionGradient>
   );
 };
 export default OthersServices;

@@ -1,6 +1,6 @@
-import Section from '@/ui/Section';
 import { Grid } from '@mui/material';
 import BenefitsIconText from '../BenefitsIconText';
+import SectionGradient from '@/ui/SectionGradient';
 
 type BenefitProps = {
   alt: string;
@@ -45,18 +45,16 @@ const defaultBenefits = [{
   },]
 
 const Benefits = ({ customBenefits =  defaultBenefits }: BenefitsProp) => {
-
   return (
-    <Section title='Beneficios' id='section-beneficios'>
+    <SectionGradient title={'Beneficios'} id={'section-beneficios'}>
       <Grid container spacing={2} pt={5} justifyContent='center'>
-        
         {customBenefits.map((benefit, index) => (
-          <Grid py={3} xs={6} md={12/5} sx={paddings} key={index+benefit.alt}>
+          <Grid py={3} xs={6} md={12/5} item sx={paddings} key={benefit.alt}>
             <BenefitsIconText src={benefit.src} alt={benefit.alt}>{benefit.title}</BenefitsIconText>
           </Grid>
         ))}
       </Grid>
-    </Section>
+    </SectionGradient>
   );
 };
 export default Benefits;
