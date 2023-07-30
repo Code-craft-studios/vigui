@@ -2,11 +2,6 @@
   padding: 2rem 0;
   position: relative;
 }
-.container {
-  display: flex !important;
-  flex-direction: column;
-  gap: 1rem;
-}
 
 .bgContainer {
   position: absolute;
@@ -22,8 +17,5 @@
 @media (min-width: 700px) {
   .section {
     padding: 4rem 0;
-  }
-  .container {
-    gap: 2rem;
   }
 }

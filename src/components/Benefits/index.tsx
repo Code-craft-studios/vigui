@@ -1,7 +1,6 @@
-import { Box, Container, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
 import BenefitsIconText from '../BenefitsIconText';
-import styles from './styles.module.css';
-import Title from '@/ui/Title';
+import SectionGradient from '@/ui/SectionGradient';
 
 type BenefitProps = {
   alt: string;
@@ -47,24 +46,15 @@ const defaultBenefits = [{
 
 const Benefits = ({ customBenefits =  defaultBenefits }: BenefitsProp) => {
   return (
-    <section
-      className={styles.section}
-      id={'section-beneficios'}
-    >
-      <Container className={styles.container}>
-        <Title text={'Beneficios'} />
-        <Grid container spacing={2} pt={5} justifyContent='center'>
-          
-          {customBenefits.map((benefit, index) => (
-            <Grid py={3} xs={6} md={12/5} item sx={paddings} key={index+benefit.alt}>
-              <BenefitsIconText src={benefit.src} alt={benefit.alt}>{benefit.title}</BenefitsIconText>
-            </Grid>
-          ))}
-        </Grid>
-      </Container>
-      <img src="/images/bg-gradient-left.svg" className={`${styles.bgContainer} ${styles.left}`} />
-      <img src="/images/bg-gradient-right.svg" className={`${styles.bgContainer} ${styles.right}`} />
-    </section>
+    <SectionGradient title={'Beneficios'} id={'section-beneficios'}>
+      <Grid container spacing={2} pt={5} justifyContent='center'>
+        {customBenefits.map((benefit, index) => (
+          <Grid py={3} xs={6} md={12/5} item sx={paddings} key={benefit.alt}>
+            <BenefitsIconText src={benefit.src} alt={benefit.alt}>{benefit.title}</BenefitsIconText>
+          </Grid>
+        ))}
+      </Grid>
+    </SectionGradient>
   );
 };
 export default Benefits;
