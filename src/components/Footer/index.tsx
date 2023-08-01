@@ -1,6 +1,11 @@
 import { Box, Container, Grid, Typography } from '@mui/material';
 import styles from './styles.module.css';
 import MapGoogle from '../MapGoogle';
+import SocialMedia from '../SocialMedia';
+import ListItemsText from '@/ui/ListItemsText';
+import Horary from '../Horary';
+import KnowUs from '../KnowUs';
+import ContactInfo from '../ContactInfo';
 
 const Footer = () => {
   return (
@@ -13,49 +18,37 @@ const Footer = () => {
       <Container>
         <Grid
           container
-          spacing={{ xs: 2, md: 4, lg: 6 }}
-          columns={{ xs: 1, sm: 2, md: 5 }}
+          spacing={{ xs: 0, md: 4, lg: 6 }}
+          columns={{ xs: 1, sm: 2, md: 10 }}
         >
-          <Grid item xs={2}>
-            <Typography className={styles.logo} fontWeight='bold'>
-              VIGUI
-            </Typography>
-            <Typography component='p' mb={{ xs: 2 }}>
-              Estamos ubicados en:
-            </Typography>
+          <Grid item xs={3}>
+            <Grid
+              container
+              columns={{ xs: 2, md: 1}}
+              pb={3}
+              justifyContent={{ xs: 'space-between', md: 'flex-start'}}
+              alignItems={{ xs: 'center', md: 'flex-start'}}>
+              <Grid item md={1}>
+                <div className={styles.logo}>
+                  <img src="/logo.webp" alt="Vigui Telecomunicaciones" />
+                </div>
+              </Grid>
+              <Grid item xs={1}>
+                <SocialMedia />
+              </Grid>
+            </Grid>
+            <ContactInfo />
+          </Grid>
+
+          <Grid item xs={2} pt={{xs: 3, md: 0}}>
+            <KnowUs />
+          </Grid>
+
+          <Grid item xs={2} pt={{xs: 3, md: 0}}>
+            <Horary />
+          </Grid>
+          <Grid item xs={3} pt={{xs: 3, md: 0}}>
             <MapGoogle />
-          </Grid>
-
-          <Grid item xs={1}>
-            <Typography variant='h6' component='h2' fontWeight='bold'>
-              Contacts
-            </Typography>
-            <Typography variant='body1' component='p'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-              velit? perspiciatis, saepe voluptatibus dignissimos nam
-              exercitationem iure? Veniam enim itaque facere, optio error
-              expedita ex aperiam!
-            </Typography>
-          </Grid>
-
-          <Grid item xs={1}>
-            <Typography variant='h6' component='h2' fontWeight='bold'>
-              Horario de atencion
-            </Typography>
-            <Typography variant='body1' component='p'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-              velit?
-            </Typography>
-          </Grid>
-
-          <Grid item xs={1}>
-            <Typography variant='h6' component='h2' fontWeight='bold'>
-              Redes sociales
-            </Typography>
-            <Typography variant='body1' component='p'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis dolorum delectus molestias tempora ipsa debitis. Rem
-            </Typography>
           </Grid>
         </Grid>
       </Container>

@@ -40,7 +40,7 @@ const defaultServices = [{
 
 const OthersServices =  ({ customServices =  defaultServices }: ServicesProp) => {
   return (
-    <SectionGradient title={'Otros servicios'}>
+    <SectionGradient title={'Otros servicios'} id='section-otros-servicios'>
       <Grid container spacing={2} py={5} justifyContent='center'>
         {customServices.map((service, index) => (
           <Grid py={3} xs={6} md={12/5} item sx={paddings} key={service.alt}>

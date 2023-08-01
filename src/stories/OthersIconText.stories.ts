@@ -19,6 +19,6 @@ export const Default: Story = {
     src: '/icon.svg',
     alt: 'Descarga',
     title: 'Instalacion',
-    children: 'Soporta varios dispositivos conectados'
+    subtitle: 'Soporta varios dispositivos conectados'
   },
 };
