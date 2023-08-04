@@ -47,7 +47,7 @@ const defaultBenefits = [{
 const Benefits = ({ customBenefits =  defaultBenefits }: BenefitsProp) => {
   return (
     <SectionGradient title={'Beneficios'} id={'section-beneficios'}>
-      <Grid container spacing={2} pt={5} justifyContent='center'>
+      <Grid container spacing={2} pb={5} pt={8} justifyContent='center'>
         {customBenefits.map((benefit, index) => (
           <Grid py={3} xs={6} md={12/5} item sx={paddings} key={benefit.alt}>
             <BenefitsIconText src={benefit.src} alt={benefit.alt}>{benefit.title}</BenefitsIconText>

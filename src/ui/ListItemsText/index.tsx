@@ -9,14 +9,11 @@ type ListProp = {
 }
 
 
-const ListItemsText = ({ customElements = defaultElements}: ListProp) => {
-  return (
-    <ul>
-      {customElements.map((text) => (
-        <li key={text}>{text}</li>
-      ))}
-    </ul>
-  )
-}
+const ListItemsText = ({ customElements = defaultElements}: ListProp) => 
+  <ul>
+    {customElements.map((text) => (
+      <li key={text}>{text}</li>
+    ))}
+  </ul>
 
 export default ListItemsText;
