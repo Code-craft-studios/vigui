@@ -14,8 +14,8 @@ const defaultLinks = [
   }
 ]
 
-async function ContactInfo(){
-  const customLinks = await supbaseLocalClient.fetchTestData().catch(() => defaultLinks);
+async function ContactInfo() {
+  const customLinks = await supbaseLocalClient.fetchContactInfo().catch(() => defaultLinks);
   return (
     <ListItemsLink
       customLinks={customLinks ?? []}
