@@ -4,6 +4,8 @@
 }
 
 .logo {
-  color: white;
-  font-size: clamp(1.6rem, 2vw, 3rem);
+  max-width: 150px;
+}
+.logo img {
+  width: 100%;
 }

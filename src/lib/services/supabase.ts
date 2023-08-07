@@ -2,16 +2,22 @@ import { SupabaseClient } from "@supabase/supabase-js";
 
 export class LocalSupabase{
   constructor(private client: SupabaseClient){}
-
-  // TODO: erease example
-  async fetchTestData(){
+  async fetchContactInfo() {
     const { data } = await this
-      .client
-      .from('test_data')
-      .select('*')
-      .throwOnError();
-
+    .client
+    .from('contact_info')
+    .select('*')
+    .throwOnError();
+    
+    return data;
+  }
+  async fetchHorary() {
+    const { data } = await this
+    .client
+    .from('horary')
+    .select('*')
+    .throwOnError();
+    
     return data;
   }
 }
-

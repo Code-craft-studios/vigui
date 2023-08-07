@@ -1,0 +1,13 @@
+.ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.li a {
+  color: #FFF;
+  font-family: var(--f-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: .9rem;
+}
