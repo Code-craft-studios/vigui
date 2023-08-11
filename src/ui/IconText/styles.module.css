@@ -4,12 +4,14 @@
   justify-content: flex-start;
   align-items: center;
 }
+
 .container img {
   margin-bottom: 1.5rem;
   inline-size: 100%;
   max-block-size: 6rem;
 }
+
 .container p {
-  max-inline-size: 20ch;
+  max-inline-size: 30ch;
   text-align: center;
 }

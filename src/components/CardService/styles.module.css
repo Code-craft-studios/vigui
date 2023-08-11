@@ -1,23 +1,46 @@
 .colorPrimary {
-  --color-1: #0786F5;
-  --color-2: #0C64ED;
+  --color-1: #FFF;
+  --color-2: #FFF;
+  --color-3: #0039A4;
+  --color-4: #FF912C;
+  --color-5: #FF4C00;
+  --color-6: #d94100;
 }
+
 .colorSecondary {
-  --color-1: #FFC85F;
-  --color-2: #FF4C00;
+  --color-1: #FFF;
+  --color-2: #FFF;
+  --color-3: #FF4C00;
+  --color-4: #FFF;
+  --color-5: #0039A4;
+  --color-6: #002b7c;
 }
+
+.colorSecondary.card:hover .price {
+  color: var(--color-3);
+}
+
 .price {
   transition: color 250ms;
-  color: var(--color-1);
+  color: var(--color-4);
+  font-size: 2em;
+  font-weight: 500;
 }
+
 .card:hover .price {
   transition: color 250ms;
-  color: var(--color-2);
+  color: var(--color-4);
 }
+
 .card:hover .list {
   transform: translateY(.5em);
   transition: transform 250ms;
 }
+
+.title {
+  font-size: 1.2rem;
+}
+
 .textBody {
   position: relative;
   top: calc(30% + 1em);
@@ -27,10 +50,19 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .list {
-  padding: 1rem;
+  padding: 1em;
+  font-size: 1.2em;
   transition: transform 250ms;
 }
+
 .button {
   width: 60%;
+  background-color: var(--color-5);
+  right: -.5em;
+}
+
+.button:hover {
+  background-color: var(--color-6);
 }

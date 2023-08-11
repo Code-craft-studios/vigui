@@ -15,6 +15,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Logo from '@/ui/Logo';
 import styles from './styles.module.css';
+import { Container } from '@mui/material';
 
 interface Props {
   /**
@@ -62,7 +63,14 @@ const Header = (props: Props) => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Logo />
+      <Box
+        display={'flex'}
+        py={3}
+        justifyContent={'center'}
+        alignItems={'center'}
+      >
+        <Logo />
+      </Box>
       <Divider />
       <List>
         {navItems.map((nav) => (
@@ -80,28 +88,36 @@ const Header = (props: Props) => {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', position: 'sticky', top: 0, zIndex: 500 }}>
       <CssBaseline />
-      <AppBar component='nav' sx={{ backgroundColor: 'var(--primary-300)' }}>
-        <Toolbar sx={{ justifyContent: 'space-between' }}>
-          <Logo />
-          <Box sx={{ display: { xs: 'none', md: 'block' } }}>
-            {navItems.map((nav) => (
-              <a href={nav.url} className={styles.link} key={nav.url}>
-                <Button sx={{ color: '#fff' }}>{nav.name}</Button>
-              </a>
-            ))}
-          </Box>
-          <IconButton
-            color='inherit'
-            aria-label='open drawer'
-            edge='start'
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { md: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
-        </Toolbar>
+      <AppBar
+        component='nav'
+        sx={{
+          backgroundColor: 'var(--primary-300)',
+          position: 'relative',
+        }}
+      >
+        <Container>
+          <Toolbar sx={{ justifyContent: 'space-between' }}>
+            <Logo />
+            <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+              {navItems.map((nav) => (
+                <a href={nav.url} className={styles.link} key={nav.url}>
+                  <Button sx={{ color: '#fff' }}>{nav.name}</Button>
+                </a>
+              ))}
+            </Box>
+            <IconButton
+              color='inherit'
+              aria-label='open drawer'
+              edge='start'
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { md: 'none' } }}
+            >
+              <MenuIcon />
+            </IconButton>
+          </Toolbar>
+        </Container>
       </AppBar>
       <Box component='nav'>
         <Drawer

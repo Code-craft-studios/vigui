@@ -4,6 +4,7 @@ declare const styles: {
   readonly "column2": string;
   readonly "img": string;
   readonly "title": string;
+  readonly "button": string;
 };
 export = styles;
 

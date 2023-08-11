@@ -1,0 +1,3 @@
+const Team = () => {
+  return <></>;
+};
