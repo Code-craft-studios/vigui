@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { CustomCarousel } from './MaybeCarosuel';
+import { CustomCarousel } from './MaybeCarousel';
 
 const meta = {
   title: 'Example/CustomCarousel',
@@ -9,9 +9,6 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 } satisfies Meta<typeof CustomCarousel>;
 
 export default meta;
