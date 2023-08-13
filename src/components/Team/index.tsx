@@ -1,21 +1,22 @@
-import { Box, Grid, Typography } from "@mui/material";
-import Carrousel from "../Carrousel";
+import { Box, Typography } from '@mui/material';
+import Carrousel from '../CarouselStaff';
 
 const Team = () => {
-
   return (
-    <Box component='section' >
+    <Box component='section'>
       <Typography
-        variant="h4"
+        variant='h4'
         component='h4'
         mt={2}
         mb={3}
         textAlign='center'
         sx={{ fontWeight: 'bold' }}
-      >Nuestro Equipo</Typography>
-         <Carrousel />
+      >
+        Nuestro Equipo
+      </Typography>
+      <Carrousel />
     </Box>
-  )
+  );
 };
 
-export default Team
+export default Team;

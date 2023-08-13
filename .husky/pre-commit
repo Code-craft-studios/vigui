@@ -3,4 +3,4 @@
 
 pnpm tsc --noEmit
 
-npx lint-staged
+pnpm dlx lint-staged
