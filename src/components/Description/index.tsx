@@ -1,5 +1,4 @@
-import { Box, Container, Grid, Paper, Typography } from '@mui/material';
-import Title from '@/ui/Title';
+import { Box, Container, Grid, Typography } from '@mui/material';
 import styles from './styles.module.css';
 
 const Description = () => {
