@@ -1,6 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpm dlx tsc --noEmit
+pnpm tsc --noEmit
 
 pnpm dlx lint-staged

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "chmod ug+x .husky/*",
     "dev": "concurrently \"next dev\" \"tcm -p '**/*.module.css' src -w\"",
     "build": "next build",
     "start": "next start",

@@ -1,7 +1,6 @@
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Container, Grid } from '@mui/material';
 import styles from './styles.module.css';
 import MapGoogle from '../MapGoogle';
-import SocialMedia from '../SocialMedia';
 import Horary from '../Horary';
 import KnowUs from '../KnowUs';
 import ContactInfo from '../ContactInfo';
