@@ -3,7 +3,6 @@ import PlansInternet from '@/components/PlansInternet';
 import Hero from '@/components/Hero';
 import Description from '@/components/Description';
 import OthersServices from '@/components/OthersServices';
-import RateUs from '@/components/RateUs';
 import Testimonials from '@/components/Testimonials';
 import FrecuentQuestions from '@/components/FrecuentQuestions';
 import Footer from '@/components/Footer';
