@@ -6,6 +6,7 @@
   "ignorePatterns": [
     "node_modules/",
     ".next/",
-    "out/"
+    "out/",
+    "readme.md"
   ]
 }
