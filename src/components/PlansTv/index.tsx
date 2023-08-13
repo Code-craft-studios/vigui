@@ -1,6 +1,9 @@
+'use client';
+
 import { Box, Container, Grid, Typography } from '@mui/material';
 import styles from './styles.module.css';
 import CardService from '../CardService';
+import { LiteYoutubeEmbed } from 'react-lite-yt-embed';
 
 const PlansTv = () => {
   return (
@@ -63,13 +66,16 @@ const PlansTv = () => {
             alignItems={'center'}
             md={8}
           >
-            <Box
-              component='iframe'
-              className={styles.video}
-              src='https://www.youtube.com/embed/9JzmrdYx3c4'
-              title='YouTube video player'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-            />
+            <div className={styles.containerVideo}>
+              <LiteYoutubeEmbed
+                id='9JzmrdYx3c4'
+                mobileResolution={'hqdefault'}
+                desktopResolution={'sddefault'}
+                lazyImage={true}
+                imageAltText='La empresa Vigui Telecomunicaciones ofrece servicio de internet en El Santiario.'
+                iframeTitle='La empresa Vigui Telecomunicaciones ofrece servicio de internet en El Santiario.'
+              />
+            </div>
           </Grid>
         </Grid>
       </Container>
