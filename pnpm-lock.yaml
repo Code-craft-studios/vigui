@@ -85,6 +85,9 @@ devDependencies:
   '@types/react-dom':
     specifier: 18.2.7
     version: 18.2.7
+  '@types/react-slick':
+    specifier: ^0.23.10
+    version: 0.23.10
   '@vitest/ui':
     specifier: ^0.33.0
     version: 0.33.0(vitest@0.33.0)
@@ -4198,6 +4201,12 @@ packages:
     dependencies:
       '@types/react': 18.2.15
     dev: false
+
+  /@types/react-slick@0.23.10:
+    resolution: {integrity: sha512-ZiqdencANDZy6sWOWJ54LDvebuXFEhDlHtXU9FFipQR2BcYU2QJxZhvJPW6YK7cocibUiNn+YvDTbt1HtCIBVA==}
+    dependencies:
+      '@types/react': 18.2.15
+    dev: true
 
   /@types/react-transition-group@4.4.6:
     resolution: {integrity: sha512-VnCdSxfcm08KjsJVQcfBmhEQAPnLB8G08hAxn39azX1qYBQ/5RVQuoHuKIcfKOdncuaUvEpFKFzEvbtIMsfVew==}

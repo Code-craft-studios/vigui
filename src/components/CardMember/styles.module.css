@@ -1,0 +1,33 @@
+
+.member{
+    width: 220px;
+    position: relative;
+    margin: 40px;
+}
+
+.member .member__img{
+    width: 80px !important;
+    position: absolute;
+    top: -37px;
+    left: -37px;
+}
+
+.member__text{
+    /* background-color: var(--color-3); */
+    background-color: #0039A4;
+    border-radius: 0 7px 7px 0;
+    padding: 22px 22px 22px 40px;
+}
+
+.member__name{
+    color: #FFB21E;
+    line-height: 1;
+    font-weight: bold;
+    width: 25px;
+}
+
+.member__position{
+    font-weight: bold;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.85);
+}
