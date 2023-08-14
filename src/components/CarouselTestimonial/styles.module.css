@@ -1,0 +1,21 @@
+.testimonial__name {
+  color: #ffb21e;
+  line-height: 1;
+  font-weight: bold;
+  width: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial__text {
+  width: 14.5rem;
+  align-self: end;
+  margin-top: 1rem;
+}
+
+.testimonial__img {
+  width: 9rem;
+  height: 8.5rem;
+  z-index: 99;
+  position: absolute;
+  left: -3rem;
+}

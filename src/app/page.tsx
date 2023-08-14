@@ -8,12 +8,14 @@ import FrecuentQuestions from '@/components/FrecuentQuestions';
 import Footer from '@/components/Footer';
 import Features from '@/components/Features';
 import PlansTv from '@/components/PlansTv';
+import Team from '@/components/Team';
 
 const App = () => {
   return (
     <>
       <Hero />
       <Description />
+      <Team/>
       <Benefits />
       <PlansInternet />
       <PlansTv />

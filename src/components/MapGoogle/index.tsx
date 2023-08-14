@@ -1,26 +1,22 @@
-import ListItemsLink from '@/ui/ListItemsLink';
-import { Box, Paper } from '@mui/material';
+'use client';
+
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import style from './style.module.css';
+import 'leaflet/dist/leaflet.css';
 
 const MapGoogle = () => {
   return (
-    <>
-      <Box component='section' pb={2}>
-        <Paper sx={{ p: 2 }}>
-          Contenido donde se mostrará un mapa de google maps Lorem ipsum dolor sit
-          amet consectetur, adipisicing elit. Veniam amet magnam corporis
-          necessitatibus inventore minus facilis libero aut expedita ipsam?
-        </Paper>
-      </Box>
-      <ListItemsLink
-        customLinks={[
-          {
-            icon: '/icons/contact/location-icon.svg',
-            text: 'Carrera 48 #48-92 Santuario Ant.',
-            url: 'https://maps.google.com',
-          }
-        ]}
-      />
-    </>
+    <MapContainer
+      center={[51.505, -0.09]}
+      zoom={13}
+      scrollWheelZoom={true}
+      className={style.map}
+    >
+      <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
+      <Marker position={[51.505, -0.09]}>
+        <Popup>Texto que se va a mostrar al hacer click en el marcador</Popup>
+      </Marker>
+    </MapContainer>
   );
 };
 

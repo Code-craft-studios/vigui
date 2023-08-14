@@ -1,20 +1,28 @@
-import { Paper } from '@mui/material';
+import { Box } from '@mui/material';
+import styles from './styles.module.css';
 
-const CardTestimonial = () => {
+interface CardTestimonialProps {
+  img: JSX.Element;
+  main: JSX.Element;
+  secondary: JSX.Element;
+}
+
+const CardTestimonial = ({ img, main, secondary }: CardTestimonialProps) => {
   return (
-    <Paper sx={{ p: 4 }}>
-      CardTestimonial Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Itaque nihil laborum, consectetur odio quisquam similique ratione. Soluta
-      vel quam, amet qui, iste eligendi magnam aspernatur consequatur quidem
-      quaerat nihil a expedita eaque recusandae alias suscipit cum culpa. Culpa
-      maiores tenetur ipsam fuga quibusdam quas temporibus dolorum excepturi.
-      Blanditiis deserunt repellendus cum, officiis dicta totam nemo recusandae
-      alias fugiat labore eos nihil laborum exercitationem! Itaque a doloribus
-      accusantium. Sed dolor deserunt accusamus ipsum mollitia illo fugiat
-      numquam. Iste accusamus adipisci possimus optio! Eveniet quam asperiores
-      quos incidunt ipsum molestiae nihil corrupti repellat nam provident
-      maxime, quas deleniti veniam dolorem quae aspernatur.
-    </Paper>
+    <Box className={styles.testimonialCard}>
+      {img}
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'start',
+          height: 'auto',
+        }}
+      >
+        <Box className={styles.testimonialInfo}>{main}</Box>
+        {secondary}
+      </Box>
+    </Box>
   );
 };
 export default CardTestimonial;
