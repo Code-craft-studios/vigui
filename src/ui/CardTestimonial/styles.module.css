@@ -1,0 +1,19 @@
+.testimonialCard {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 19rem;
+  height: auto;
+}
+
+.testimonialInfo {
+  background-color: #0039a4;
+  color: #fff;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+  padding-top: 1rem;
+  height: 8.5rem;
+  border-radius: 0 7px 7px 0;
+}

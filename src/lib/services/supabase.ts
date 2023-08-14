@@ -24,4 +24,13 @@ export class LocalSupabase {
 
     return data;
   }
+
+  async fetchTestimonial() {
+    const { data } = await this.client
+      .from('testimonial')
+      .select('*')
+      .throwOnError();
+
+    return data;
+  }
 }
