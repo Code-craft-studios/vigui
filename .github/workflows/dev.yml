@@ -2,9 +2,15 @@ on:
   push:
     tags:
       - 'dev*'
+
 permissions:
   contents: write
   pages: write
+
+env:
+  NEXT_PUBLIC_SUPABASE_TOKEN: ${{ secrets.NEXT_PUBLIC_SUPABASE_TOKEN }}
+  NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,7 +30,9 @@ jobs:
         run: |
           pnpm install
           pnpm build
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .next
