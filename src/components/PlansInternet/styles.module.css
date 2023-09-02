@@ -1,0 +1,21 @@
+.background {
+  background-image: url("/background-cards-1.webp");
+  background-repeat: no-repeat;
+  background-color: #0E58EA;
+  padding: 1rem 0;
+  background-position: center;
+}
+
+.container {
+  display: flex !important;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: lighter;
+}

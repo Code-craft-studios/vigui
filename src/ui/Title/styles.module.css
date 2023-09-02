@@ -1,0 +1,15 @@
+.title {
+  font-size: clamp(1.2rem, 3.5vw, 2rem);
+  font-family: var(--f-secondary);
+}
+.primary {
+  color: var(--primary-300);
+}
+.secondary {
+  color: #FFFFFF;
+}
+@media (min-width: 780px) {
+  .title {
+    text-align: center;
+  }
+}

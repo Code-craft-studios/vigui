@@ -1,0 +1,28 @@
+.background {
+  background-image: url('/background-cards-2.webp');
+  background-repeat: no-repeat;
+  padding: 1rem 0;
+  background-color: #ff7a00;
+  background-position: center;
+}
+
+.container {
+  display: flex !important;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: lighter;
+}
+
+.containerVideo {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}

@@ -1,0 +1,21 @@
+.section {
+  padding: 2rem 0;
+  position: relative;
+}
+
+.bgContainer {
+  position: absolute;
+  inset-block-end: 0;
+}
+.left {
+  inset-inline-start: 0;
+}
+.right {
+  inset-inline-end: 0;
+}
+
+@media (min-width: 700px) {
+  .section {
+    padding: 4rem 0;
+  }
+}

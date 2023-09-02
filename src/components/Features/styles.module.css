@@ -1,0 +1,59 @@
+.background {
+  background-image: url("/background-features.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.textContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text {
+  color: #FFF;
+  text-shadow: -1px -1px 4px rgba(0, 0, 0, 0.34);
+  max-width: 30ch;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.textLeft {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.textLeft::before {
+  content: url("/check.png");
+  margin-top: .75rem;
+  margin-right: .5rem;
+}
+
+.textRight {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.textRight::after {
+  content: url("/check.png");
+  margin-top: .75rem;
+  margin-left: .5rem;
+}
+
+@media (max-width: 900px) {
+  .container {
+    gap: 10vh;
+  }
+
+  .text {
+    font-size: 1.5rem;
+  }
+}

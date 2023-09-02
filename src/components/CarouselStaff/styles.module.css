@@ -1,0 +1,24 @@
+.member{
+  display: flex;
+  justify-content: center;
+}
+
+.member__img{
+  width: 5rem;
+  position: absolute;
+  inset-block-start: -2.25rem;
+  inset-inline-start: -2.25rem;
+}
+
+.member__name{
+  color: #FFB21E;
+  line-height: 1;
+  font-weight: bold;
+  width: 1.5rem;
+}
+
+.member__position{
+  font-weight: bold;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.85);
+}

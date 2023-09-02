@@ -1,0 +1,63 @@
+.section {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.container {
+  background-image: url("/background-faqs.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  padding: 3rem;
+  position: relative;
+}
+
+.title {
+  font-size: 2.5rem;
+  max-width: 25ch;
+  color: #FFF;
+  margin-bottom: 1rem;
+}
+
+.img {
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+}
+
+.button {
+  background-color: #FF4C00;
+  border: .2rem solid #FF4C00;
+  font-size: 1.5rem;
+  color: #FFF;
+  padding: .35rem 1.5rem;
+  text-transform: capitalize;
+  border-radius: .5rem;
+}
+
+.button:hover {
+  background-color: #FFF;
+  color: #FF4C00;
+}
+
+@media (max-width: 900px) {
+  .container {
+    border-radius: 0;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .img {
+    right: 0;
+    transform: scale(.75);
+    transform-origin: bottom right;
+  }
+
+  .button {
+    font-size: 1.4rem;
+    padding: .2rem 1rem;
+  }
+}
