@@ -17,14 +17,6 @@ import Logo from '@/ui/Logo';
 import styles from './styles.module.css';
 import { Container } from '@mui/material';
 
-interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window?: () => Window;
-}
-
 const drawerWidth = 240;
 const navItems = [
   {
@@ -53,8 +45,7 @@ const navItems = [
   },
 ];
 
-const Header = (props: Props) => {
-  const { window } = props;
+const Header = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -83,9 +74,6 @@ const Header = (props: Props) => {
       </List>
     </Box>
   );
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
 
   return (
     <Box sx={{ display: 'flex', position: 'sticky', top: 0, zIndex: 500 }}>
@@ -121,7 +109,6 @@ const Header = (props: Props) => {
       </AppBar>
       <Box component='nav'>
         <Drawer
-          container={container}
           variant='temporary'
           anchor='right'
           open={mobileOpen}
