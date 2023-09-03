@@ -1,5 +1,5 @@
 .background {
-  background-image: url("/background-features.webp");
+  background-image: url("./background-features.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -32,7 +32,7 @@
 }
 
 .textLeft::before {
-  content: url("/check.png");
+  content: url("./check.png");
   margin-top: .75rem;
   margin-right: .5rem;
 }
@@ -43,7 +43,7 @@
 }
 
 .textRight::after {
-  content: url("/check.png");
+  content: url("./check.png");
   margin-top: .75rem;
   margin-left: .5rem;
 }

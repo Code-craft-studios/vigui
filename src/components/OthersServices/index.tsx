@@ -21,21 +21,21 @@ const paddings = {
 };
 const defaultServices = [
   {
-    src: '/icons/other_services/instalacion.svg',
+    src: './icons/other_services/instalacion.svg',
     alt: 'Instalación',
     title: 'Instalación',
     subtitle:
       'Para toda instalación se realiza un único pago al adquirir el servicio por el costo de $30.000.',
   },
   {
-    src: '/icons/other_services/reconexion.svg',
+    src: './icons/other_services/reconexion.svg',
     alt: 'Reconexión',
     title: 'Reconexión',
     subtitle: `Internet: En caso de corte de servicio y quiera realizar reconexión del mismo debe realizar un pago por el valor de $10.000.
     Televisión: Se corta a los dos meses sin pagar. En caso de corte de servicio y quiera realizar reconexión del mismo debe realizar un pago por el valor de $15.000. `,
   },
   {
-    src: '/icons/other_services/translado.svg',
+    src: './icons/other_services/translado.svg',
     alt: 'Translado',
     title: 'Translado',
     subtitle:

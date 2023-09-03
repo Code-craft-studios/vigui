@@ -11,7 +11,7 @@ const NotFound = () => {
       <Typography component='p' sx={{ mb: 2 }}>
         Ups! pagina no encontrada
       </Typography>
-      <Link href='/'>
+      <Link href='./'>
         <Button variant='contained'>Volver al inicio</Button>
       </Link>
     </Box>

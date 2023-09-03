@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    img: '/images/vigui-equipo-atencion-al-cliente-desktop.webp',
+    img: './images/vigui-equipo-atencion-al-cliente-desktop.webp',
     name: 'Victor Alonso',
     position: 'Representante Legal',
   },

@@ -1,7 +1,6 @@
 import BenefitsIconText from '@/components/BenefitsIconText';
 import type { Meta, StoryObj } from '@storybook/react';
 
-
 const meta = {
   title: 'Example/BenefitsIconText',
   component: BenefitsIconText,
@@ -16,8 +15,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    src: '/icon.svg',
+    src: './icon.svg',
     alt: 'Descarga',
-    children: 'Descarga de manera ininterrumpida'
+    children: 'Descarga de manera ininterrumpida',
   },
 };

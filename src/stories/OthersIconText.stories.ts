@@ -1,7 +1,6 @@
 import OthersIconText from '@/components/OthersIconText';
 import type { Meta, StoryObj } from '@storybook/react';
 
-
 const meta = {
   title: 'Example/OthersIconText',
   component: OthersIconText,
@@ -16,9 +15,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    src: '/icon.svg',
+    src: './icon.svg',
     alt: 'Descarga',
     title: 'Instalacion',
-    subtitle: 'Soporta varios dispositivos conectados'
+    subtitle: 'Soporta varios dispositivos conectados',
   },
 };

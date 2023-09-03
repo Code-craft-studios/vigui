@@ -13,7 +13,7 @@ const FrecuentQuestions = () => {
             <Button className={styles.button}>¡Contáctanos!</Button>
           </Grid>
         </Grid>
-        <img src='/person-faqs.png' className={styles.img} />
+        <img src='./person-faqs.png' className={styles.img} />
       </Container>
     </Box>
   );
