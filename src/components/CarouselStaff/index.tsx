@@ -11,22 +11,22 @@ import { useMemo } from 'react';
 
 const defaultMembers = [
   {
-    img: '/images/vigui-equipo-atencion-al-cliente-desktop.webp',
+    img: './images/vigui-equipo-atencion-al-cliente-desktop.webp',
     name: 'Victor Alonso',
     position: 'Representante Legal',
   },
   {
-    img: '/images/vigui-equipo-fibra-optica-desktop.webp',
+    img: './images/vigui-equipo-fibra-optica-desktop.webp',
     name: 'Dora Hoyos',
     position: 'Gerente Administrativa',
   },
   {
-    img: '/images/vigui-equipo-internet-dedicado-desktop.webp',
+    img: './images/vigui-equipo-internet-dedicado-desktop.webp',
     name: 'Valentina Suarez',
     position: 'Auxiliar Administrativa',
   },
   {
-    img: '/images/vigui-equipo-internet-sin-caidas-desktop.webp',
+    img: './images/vigui-equipo-internet-sin-caidas-desktop.webp',
     name: 'Gerardo Ramirez',
     position: 'Ing. Sistemas y jefe de técnicos',
   },
