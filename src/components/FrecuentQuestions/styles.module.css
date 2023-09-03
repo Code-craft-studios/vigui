@@ -4,7 +4,7 @@
 }
 
 .container {
-  background-image: url("./background-faqs.webp");
+  background-image: url("../../../public/background-faqs.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
