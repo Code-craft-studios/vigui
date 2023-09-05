@@ -35,7 +35,7 @@ const defaultMembers = [
 const mainBoxSx: SxProps = { height: '250px', display: { lg: 'none' } };
 
 const responsiveSx: SxProps = {
-  width: '100vw',
+  width: '100%',
   height: 200,
   justifyContent: 'space-around',
   display: { xs: 'none', lg: 'flex' },

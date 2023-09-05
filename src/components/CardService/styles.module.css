@@ -1,18 +1,18 @@
 .colorPrimary {
-  --color-1: #FFF;
-  --color-2: #FFF;
-  --color-3: #0039A4;
-  --color-4: #FF912C;
-  --color-5: #FF4C00;
+  --color-1: #fff;
+  --color-2: #fff;
+  --color-3: #0039a4;
+  --color-4: #ff912c;
+  --color-5: #ff4c00;
   --color-6: #d94100;
 }
 
 .colorSecondary {
-  --color-1: #FFF;
-  --color-2: #FFF;
-  --color-3: #FF4C00;
-  --color-4: #FFF;
-  --color-5: #0039A4;
+  --color-1: #fff;
+  --color-2: #fff;
+  --color-3: #ff4c00;
+  --color-4: #fff;
+  --color-5: #0039a4;
   --color-6: #002b7c;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .card:hover .list {
-  transform: translateY(.5em);
+  transform: translateY(0.5em);
   transition: transform 250ms;
 }
 
@@ -60,7 +60,7 @@
 .button {
   width: 60%;
   background-color: var(--color-5);
-  right: -.5em;
+  right: -0.5em;
 }
 
 .button:hover {

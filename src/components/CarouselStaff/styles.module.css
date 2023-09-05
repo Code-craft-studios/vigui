@@ -1,23 +1,23 @@
-.member{
+.member {
   display: flex;
   justify-content: center;
 }
 
-.member__img{
+.member__img {
   width: 5rem;
   position: absolute;
   inset-block-start: -2.25rem;
   inset-inline-start: -2.25rem;
 }
 
-.member__name{
-  color: #FFB21E;
+.member__name {
+  color: #ffb21e;
   line-height: 1;
   font-weight: bold;
   width: 1.5rem;
 }
 
-.member__position{
+.member__position {
   font-weight: bold;
   line-height: 1;
   color: rgba(255, 255, 255, 0.85);
