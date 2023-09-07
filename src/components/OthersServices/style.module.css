@@ -1,0 +1,17 @@
+.containerCards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 4rem 0 2rem;
+}
+
+@media (width > 920px) {
+  .containerCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+  }
+}

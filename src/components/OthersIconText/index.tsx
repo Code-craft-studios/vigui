@@ -1,19 +1,20 @@
-import IconText from '@/ui/IconText';
-import { Typography } from '@mui/material';
+import style from './style.module.css';
 
 type Props = {
   src: string;
   alt: string;
-  title: string;
-  subtitle: string;
-}
+  title?: string;
+  subtitle?: string;
+};
 
-const OthersIconText = ({subtitle, src, alt, title}: Props) => {
+const OthersIconText = ({ subtitle, src, alt, title }: Props) => {
   return (
-    <IconText src={src} alt={alt}>
-      <Typography variant="h5" component="h3">{ title }</Typography>
-      <Typography>{ subtitle }</Typography>
-    </IconText>
+    <article className={style.card}>
+      <img src={src} alt={alt} />
+      {title}
+      {subtitle}
+    </article>
   );
 };
+
 export default OthersIconText;

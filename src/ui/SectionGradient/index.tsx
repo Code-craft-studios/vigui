@@ -21,14 +21,6 @@ const SectionGradient = ({
         <Title text={title} variant={'primary'} />
         {children}
       </Container>
-      <img
-        src='./images/bg-gradient-left.svg'
-        className={`${styles.bgContainer} ${styles.left}`}
-      />
-      <img
-        src='./images/bg-gradient-right.svg'
-        className={`${styles.bgContainer} ${styles.right}`}
-      />
     </section>
   );
 };

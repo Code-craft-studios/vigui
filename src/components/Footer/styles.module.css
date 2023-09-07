@@ -1,6 +1,7 @@
 .footer {
   background: var(--primary-400);
   color: white;
+  overflow: hidden;
 }
 
 .logo {
