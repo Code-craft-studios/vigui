@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  overflow: hidden;
 }
 .li a {
-  color: #FFF;
+  color: #fff;
   font-family: var(--f-secondary);
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }

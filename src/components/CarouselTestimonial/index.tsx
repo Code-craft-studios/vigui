@@ -9,21 +9,21 @@ import { useMemo } from 'react';
 
 const defaultTestimonials = [
   {
-    img: '/images/vigui-testimonios-telecomunicacion-desktop.webp',
+    img: './images/vigui-testimonios-telecomunicacion-desktop.webp',
     name: 'Natalia Martínez',
     servicio: 'Internet',
     testimonio:
       'Tuve varios proveedores de internet, hasta que encontré esta empresa. fue la solucion a todos mis problemas',
   },
   {
-    img: '/images/vigui-testimonios-ubicaciones-desktop.webp',
+    img: './images/vigui-testimonios-ubicaciones-desktop.webp',
     name: 'Valentina Herrera',
     servicio: 'Internet',
     testimonio:
       'Llegué a Santuario y tenia que decidirme por una empresa de internet para mi trabajo, empecé a buscar y encontré viguitelecomunicaciones, han sido la mejor empresa de todas',
   },
   {
-    img: '/images/vigui-testimonios-horarios-desktop.webp',
+    img: './images/vigui-testimonios-horarios-desktop.webp',
     name: 'Santiago Hernández',
     servicio: 'Internet',
     testimonio:
@@ -34,7 +34,7 @@ const defaultTestimonials = [
 const mainBoxSx: SxProps = { display: { lg: 'none' } };
 
 const responsiveSx: SxProps = {
-  width: '100vw',
+  width: '100%',
   justifyContent: 'space-around',
   display: { xs: 'none', lg: 'flex' },
 };

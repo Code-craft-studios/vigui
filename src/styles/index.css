@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background: var(--bg);
+  background: linear-gradient(90deg, #c0cde8, white 15% 80%, #c0cde8);
 }
 
 body > main {

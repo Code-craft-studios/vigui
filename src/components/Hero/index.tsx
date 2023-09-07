@@ -7,7 +7,7 @@ const Hero = () => {
       <Container>
         <Grid container>
           <Grid item xs={12} md={6} className={styles.column1}>
-            <img src='/person.png' className={styles.img} />
+            <img src='./person.png' className={styles.img} />
           </Grid>
           <Grid item xs={12} md={6} className={styles.column2}>
             <Typography component='h1' className={styles.title}>
