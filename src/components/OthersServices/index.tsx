@@ -1,6 +1,6 @@
-import { Grid } from '@mui/material';
 import OthersIconText from '../OthersIconText';
 import SectionGradient from '@/ui/SectionGradient';
+import style from './style.module.css';
 
 type ServiceProps = {
   alt: string;
@@ -13,12 +13,6 @@ type ServicesProp = {
   customServices?: Array<ServiceProps>;
 };
 
-const paddings = {
-  padding: {
-    xs: '1rem',
-    md: '2rem 0',
-  },
-};
 const defaultServices = [
   {
     src: '/icons/other_services/instalacion.svg',
@@ -49,18 +43,17 @@ const OthersServices = ({ customServices = defaultServices }: ServicesProp) => {
       title={'Requisitos y valores'}
       id='section-otros-servicios'
     >
-      <Grid container spacing={2} pb={5} pt={8} justifyContent='center'>
-        {customServices.map((service, index) => (
-          <Grid py={3} xs={12} md={4} item sx={paddings} key={service.alt}>
-            <OthersIconText
-              src={service.src}
-              alt={service.alt}
-              title={service.title}
-              subtitle={service.subtitle}
-            />
-          </Grid>
+      <section className={style.containerCards}>
+        {customServices.map((service) => (
+          <OthersIconText
+            src={service.src}
+            alt={service.alt}
+            title={service.title}
+            subtitle={service.subtitle}
+            key={service.title}
+          ></OthersIconText>
         ))}
-      </Grid>
+      </section>
     </SectionGradient>
   );
 };
