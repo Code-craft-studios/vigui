@@ -45,7 +45,7 @@ const Footer = () => {
             <Horary />
           </Grid>
           <Grid item xs={3} pt={{ xs: 3, md: 0 }}>
-            {typeof window !== 'undefined' && <MapGoogle />}
+            <MapGoogle />
           </Grid>
         </Grid>
       </Container>
