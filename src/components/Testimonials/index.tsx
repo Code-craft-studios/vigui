@@ -3,7 +3,7 @@ import { CarouselTestimonial } from '../CarouselTestimonial';
 
 const Testimonials = () => {
   return (
-    <Box component='section' sx={{ width: '100%' }}>
+    <Box component='section' sx={{ width: '100%' }} id='section-testimonios'>
       <Typography
         variant='h4'
         component='h4'

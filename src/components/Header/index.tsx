@@ -28,20 +28,20 @@ const navItems = [
     url: '#section-conocenos',
   },
   {
-    name: 'Planes y servicios',
-    url: '#section-planes',
+    name: 'Beneficios',
+    url: '#section-beneficios',
   },
   {
-    name: 'Consultas',
-    url: '#section-frecuentes',
+    name: 'Planes y servicios',
+    url: '#section-planes',
   },
   {
     name: 'Testimonios',
     url: '#section-testimonios',
   },
   {
-    name: 'Beneficios',
-    url: '#section-beneficios',
+    name: 'Consultas',
+    url: '#section-frecuentes',
   },
 ];
 
