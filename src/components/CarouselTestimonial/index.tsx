@@ -34,7 +34,7 @@ const defaultTestimonials = [
 const mainBoxSx: SxProps = { display: { lg: 'none' } };
 
 const responsiveSx: SxProps = {
-  width: '100vw',
+  width: '100%',
   justifyContent: 'space-around',
   display: { xs: 'none', lg: 'flex' },
 };

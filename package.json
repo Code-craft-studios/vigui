@@ -70,6 +70,7 @@
     "*.{js,md,tsx,ts}": [
       "eslint --fix",
       "prettier --write --ignore-unknown"
-    ]
+    ],
+    "!**/*.css.d.ts": []
   }
 }

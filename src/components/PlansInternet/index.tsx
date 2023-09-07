@@ -1,6 +1,7 @@
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import styles from './styles.module.css';
-import CardService from '../CardService';
+import CardPlan from '../CardPlan';
+import { ITEMS_PLANS } from './data/itemsPlans';
 
 const PlansInternet = () => {
   return (
@@ -28,83 +29,18 @@ const PlansInternet = () => {
         >
           Internet Hogar
         </Typography>
-        <Grid container spacing={2}>
-          <Grid
-            item
-            xs={12}
-            display={'flex'}
-            justifyContent={'center'}
-            alignItems={'center'}
-            sx={{
-              marginTop: {
-                xs: '0',
-                md: '2.5rem',
-              },
-            }}
-            md={4}
-          >
-            <CardService
-              price='$44.000'
-              items={[
-                'Navega',
-                'Descarga',
-                'Transmite',
-                'Juega en vivo',
-                'Reproduce videos',
-              ]}
+        <div className={styles.itemsContainer}>
+          {ITEMS_PLANS.map((item) => (
+            <CardPlan
+              key={item.title}
+              price={item.price}
+              items={item.items}
+              title={item.title}
+              subtitle='De 20 a 500 Mbps'
               variant='primary'
-              title='20 Mb'
             />
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            display={'flex'}
-            justifyContent={'center'}
-            alignItems={'center'}
-            md={4}
-          >
-            <CardService
-              price='$66.000'
-              items={[
-                'Navega',
-                'Descarga',
-                'Transmite',
-                'Juega en vivo',
-                'Reproduce videos',
-              ]}
-              variant='primary'
-              title='30 Mb'
-            />
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            display={'flex'}
-            justifyContent={'center'}
-            alignItems={'center'}
-            sx={{
-              marginTop: {
-                xs: '0',
-                md: '2.5rem',
-              },
-            }}
-            md={4}
-          >
-            <CardService
-              price='$88.000'
-              items={[
-                'Navega',
-                'Descarga',
-                'Transmite',
-                'Juega en vivo',
-                'Reproduce videos',
-              ]}
-              variant='primary'
-              title='40 Mb'
-            />
-          </Grid>
-        </Grid>
+          ))}
+        </div>
       </Container>
     </Box>
   );
