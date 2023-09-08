@@ -14,27 +14,27 @@ type BenefitsProp = {
 
 const defaultBenefits = [
   {
-    src: '/icons/benefits/descarga.svg',
+    src: './icons/benefits/descarga.svg',
     alt: 'Descarga',
     title: 'Descarga de manera ininterrumpida',
   },
   {
-    src: '/icons/benefits/megas.svg',
+    src: './icons/benefits/megas.svg',
     alt: 'Megas',
     title: 'Servicio de megas dedicado',
   },
   {
-    src: '/icons/benefits/dispositivos.svg',
+    src: './icons/benefits/dispositivos.svg',
     alt: 'Dispositivos',
     title: 'Soporta varios dispositivos conectados',
   },
   {
-    src: '/icons/benefits/velocidad.svg',
+    src: './icons/benefits/velocidad.svg',
     alt: 'Velocidad',
     title: 'Rendimiento de alta velocidad',
   },
   {
-    src: '/icons/benefits/conexion.svg',
+    src: './icons/benefits/conexion.svg',
     alt: 'Conexion',
     title: 'Múltiples métodos de conexión',
   },
