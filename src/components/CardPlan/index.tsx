@@ -1,3 +1,4 @@
+import { PHONE } from '@/data/company';
 import style from './style.module.css';
 
 type Variants = 'primary' | 'secondary';
@@ -30,7 +31,7 @@ const CardPlan = (props: Props) => {
           <p key={item}>{item}</p>
         ))}
         <a
-          href={`https://api.whatsapp.com/send?phone=${process.env.NEXT_PUBLIC_PHONE}&text=${MESSAGE}`}
+          href={`https://api.whatsapp.com/send?phone=${PHONE}&text=${MESSAGE}`}
           target='_blank'
         >
           <button className={style.button}>Comprar</button>

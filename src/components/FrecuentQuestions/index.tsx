@@ -1,5 +1,6 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import styles from './styles.module.css';
+import { PHONE } from '@/data/company';
 
 const FrecuentQuestions = () => {
   const MESSAGE = `Hola Vigui telecomunicaciones, mi nombre es ... , tengo dudas sobre el servicio de internet.`;
@@ -13,7 +14,7 @@ const FrecuentQuestions = () => {
               Haznos conocer tus dudas y comunicate con nosotros
             </Typography>
             <a
-              href={`https://api.whatsapp.com/send?phone=${process.env.NEXT_PUBLIC_PHONE}&text=${MESSAGE}`}
+              href={`https://api.whatsapp.com/send?phone=${PHONE}&text=${MESSAGE}`}
               target='_blank'
             >
               <Button className={styles.button}>¡Contáctanos!</Button>
