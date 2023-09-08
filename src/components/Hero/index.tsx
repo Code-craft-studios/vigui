@@ -17,7 +17,9 @@ const Hero = () => {
               <br />
               <span>10 Mb a 250 Mb</span>
             </Typography>
-            <Button className={styles.button}>¡Contrata ahora!</Button>
+            <a href='#section-planes'>
+              <Button className={styles.button}>¡Contrata ahora!</Button>
+            </a>
           </Grid>
         </Grid>
       </Container>
