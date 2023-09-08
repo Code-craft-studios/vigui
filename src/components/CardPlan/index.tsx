@@ -16,6 +16,8 @@ const variants: Record<Variants, string> = {
 };
 
 const CardPlan = (props: Props) => {
+  const MESSAGE = `Hola Vigui telecomunicaciones, mi nombre es ... y estoy interesado en el plan de ${props.title} de ${props.price} pesos colombianos.`;
+
   return (
     <article className={`${variants[props.variant]} ${style.card} `}>
       <header className={style.header}>
@@ -27,7 +29,12 @@ const CardPlan = (props: Props) => {
         {props.items.map((item) => (
           <p key={item}>{item}</p>
         ))}
-        <button className={style.button}>Comprar</button>
+        <a
+          href={`https://api.whatsapp.com/send?phone=${process.env.NEXT_PUBLIC_PHONE}&text=${MESSAGE}`}
+          target='_blank'
+        >
+          <button className={style.button}>Comprar</button>
+        </a>
       </section>
     </article>
   );

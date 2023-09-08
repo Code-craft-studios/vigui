@@ -2,6 +2,8 @@ import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import styles from './styles.module.css';
 
 const FrecuentQuestions = () => {
+  const MESSAGE = `Hola Vigui telecomunicaciones, mi nombre es ... , tengo dudas sobre el servicio de internet.`;
+
   return (
     <Box component='section' className={styles.section} id='section-frecuentes'>
       <Container className={styles.container}>
@@ -10,7 +12,12 @@ const FrecuentQuestions = () => {
             <Typography className={styles.title}>
               Haznos conocer tus dudas y comunicate con nosotros
             </Typography>
-            <Button className={styles.button}>¡Contáctanos!</Button>
+            <a
+              href={`https://api.whatsapp.com/send?phone=${process.env.NEXT_PUBLIC_PHONE}&text=${MESSAGE}`}
+              target='_blank'
+            >
+              <Button className={styles.button}>¡Contáctanos!</Button>
+            </a>
           </Grid>
         </Grid>
         <img src='/person-faqs.png' className={styles.img} />
