@@ -8,6 +8,7 @@ const Features = () => {
       id='section-conocenos'
       py={{ xs: 2, sm: 6, md: 8 }}
       className={styles.background}
+      style={{ backgroundImage: 'url(./background-features.webp)' }}
     >
       <Container className={styles.container}>
         <div className={`${styles.textContainer} ${styles.textLeft}`}>
