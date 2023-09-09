@@ -9,6 +9,11 @@ const Features = () => {
       py={{ xs: 2, sm: 6, md: 8 }}
       className={styles.background}
     >
+      <img
+        src='./background-features.webp'
+        className={styles.imgbg}
+        alt='fondo naranja'
+      />
       <Container className={styles.container}>
         <div className={`${styles.textContainer} ${styles.textLeft}`}>
           <Typography className={styles.text}>

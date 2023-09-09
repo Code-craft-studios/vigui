@@ -2,11 +2,17 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background-image: url('/banner-desktop.webp'),
-    url('/public/banner-desktop.webp');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+}
+
+.imgbg {
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  position: absolute;
+  object-fit: cover;
 }
 
 .column1 {

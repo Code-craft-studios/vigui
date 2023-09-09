@@ -4,6 +4,7 @@ import { Box, Button, Container, Grid, Typography } from '@mui/material';
 const Hero = () => {
   return (
     <Box component='div' className={styles.hero} id='section-inicio'>
+      <img src='./banner-desktop.webp' className={styles.imgbg} />
       <Container>
         <Grid container>
           <Grid item xs={12} md={6} className={styles.column1}>

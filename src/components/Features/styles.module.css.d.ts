@@ -1,5 +1,6 @@
 declare const styles: {
   readonly "background": string;
+  readonly "imgbg": string;
   readonly "container": string;
   readonly "textContainer": string;
   readonly "text": string;

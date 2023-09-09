@@ -8,6 +8,7 @@ const FrecuentQuestions = () => {
   return (
     <Box component='section' className={styles.section} id='section-frecuentes'>
       <Container className={styles.container}>
+        <img src='./background-faqs.webp' className={styles.imgbg} />
         <Grid container>
           <Grid item xs={8} md={12}>
             <Typography className={styles.title}>
