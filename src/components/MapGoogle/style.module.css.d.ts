@@ -1,4 +1,5 @@
 declare const styles: {
-  readonly map: string;
+  readonly "map": string;
 };
 export = styles;
+

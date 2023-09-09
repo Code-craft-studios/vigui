@@ -1,4 +1,5 @@
 declare const styles: {
-  readonly containerCards: string;
+  readonly "containerCards": string;
 };
 export = styles;
+

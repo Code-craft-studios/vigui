@@ -1,5 +1,6 @@
 declare const styles: {
-  readonly testimonialCard: string;
-  readonly testimonialInfo: string;
+  readonly "testimonialCard": string;
+  readonly "testimonialInfo": string;
 };
 export = styles;
+

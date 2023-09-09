@@ -1,4 +1,5 @@
 declare const styles: {
-  readonly card: string;
+  readonly "card": string;
 };
 export = styles;
+
