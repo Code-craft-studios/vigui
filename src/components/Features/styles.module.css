@@ -1,5 +1,5 @@
 .background {
-  background-image: url("/background-features.webp");
+  background-image: url('/background-features.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -19,7 +19,7 @@
 }
 
 .text {
-  color: #FFF;
+  color: #fff;
   text-shadow: -1px -1px 4px rgba(0, 0, 0, 0.34);
   max-width: 30ch;
   margin: 0;
@@ -32,9 +32,9 @@
 }
 
 .textLeft::before {
-  content: url("/check.png");
-  margin-top: .75rem;
-  margin-right: .5rem;
+  content: url('/check.png');
+  margin-top: 0.75rem;
+  margin-right: 0.5rem;
 }
 
 .textRight {
@@ -43,9 +43,9 @@
 }
 
 .textRight::after {
-  content: url("/check.png");
-  margin-top: .75rem;
-  margin-left: .5rem;
+  content: url('/check.png');
+  margin-top: 0.75rem;
+  margin-left: 0.5rem;
 }
 
 @media (max-width: 900px) {
