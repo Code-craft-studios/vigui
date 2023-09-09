@@ -21,7 +21,7 @@ const FrecuentQuestions = () => {
             </a>
           </Grid>
         </Grid>
-        <img src='/person-faqs.png' className={styles.img} />
+        <img src='./person-faqs.png' className={styles.img} />
       </Container>
     </Box>
   );
