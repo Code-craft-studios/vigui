@@ -37,21 +37,9 @@
   justify-content: flex-start;
 }
 
-.textLeft::before {
-  content: url('/check.png');
-  margin-top: 0.75rem;
-  margin-right: 0.5rem;
-}
-
 .textRight {
   text-align: right;
   justify-content: flex-end;
-}
-
-.textRight::after {
-  content: url('/check.png');
-  margin-top: 0.75rem;
-  margin-left: 0.5rem;
 }
 
 @media (max-width: 900px) {

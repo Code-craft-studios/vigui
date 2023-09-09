@@ -1,5 +1,6 @@
 import { Box, Container, Typography } from '@mui/material';
 import styles from './styles.module.css';
+import LogoIcon from '@/ui/LogoIcon';
 
 const Features = () => {
   return (
@@ -16,6 +17,7 @@ const Features = () => {
       />
       <Container className={styles.container}>
         <div className={`${styles.textContainer} ${styles.textLeft}`}>
+          <LogoIcon />
           <Typography className={styles.text}>
             Ofrecemos el 100% de los megas
           </Typography>
@@ -24,8 +26,10 @@ const Features = () => {
           <Typography className={styles.text}>
             Cortos tiempos de espera para instalacion
           </Typography>
+          <LogoIcon />
         </div>
         <div className={`${styles.textContainer} ${styles.textLeft}`}>
+          <LogoIcon />
           <Typography className={styles.text}>
             Disponemos de muchas líneas de respaldo para evitar caídas de
             internet
@@ -35,8 +39,10 @@ const Features = () => {
           <Typography className={styles.text}>
             Ofrecemos rápida atencion al cliente
           </Typography>
+          <LogoIcon />
         </div>
         <div className={`${styles.textContainer} ${styles.textLeft}`}>
+          <LogoIcon />
           <Typography className={styles.text}>
             Internet 100% estable y dedicado
           </Typography>
@@ -45,6 +51,7 @@ const Features = () => {
           <Typography className={styles.text}>
             Megaje libre en horario nocturno dependiendo la saturacion
           </Typography>
+          <LogoIcon />
         </div>
       </Container>
     </Box>
