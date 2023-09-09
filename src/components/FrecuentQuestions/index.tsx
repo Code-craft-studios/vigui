@@ -6,7 +6,12 @@ const FrecuentQuestions = () => {
   const MESSAGE = `Hola Vigui telecomunicaciones, mi nombre es ... , tengo dudas sobre el servicio de internet.`;
 
   return (
-    <Box component='section' className={styles.section} id='section-frecuentes'>
+    <Box
+      component='section'
+      className={styles.section}
+      id='section-frecuentes'
+      style={{ backgroundImage: 'url(./background-faqs.webp)' }}
+    >
       <Container className={styles.container}>
         <Grid container>
           <Grid item xs={8} md={12}>

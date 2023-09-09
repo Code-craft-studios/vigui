@@ -3,7 +3,12 @@ import { Box, Button, Container, Grid, Typography } from '@mui/material';
 
 const Hero = () => {
   return (
-    <Box component='div' className={styles.hero} id='section-inicio'>
+    <Box
+      component='div'
+      className={styles.hero}
+      id='section-inicio'
+      style={{ backgroundImage: 'url(./banner-desktop.webp)' }}
+    >
       <Container>
         <Grid container>
           <Grid item xs={12} md={6} className={styles.column1}>
